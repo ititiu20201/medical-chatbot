@@ -43,16 +43,7 @@ class MedicalDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
-        """
-        Get a single item from the dataset
-        
-        Args:
-            idx (int): Index of the item
-            
-        Returns:
-            Dict[str, torch.Tensor]: Dictionary containing input_ids, attention_mask,
-                                   and labels (if available)
-        """
+
         row = self.data.iloc[idx]
         
         # Prepare input text
@@ -125,5 +116,3 @@ class MedicalDataset(Dataset):
             collated['output_type'] = output_types
             
         return collated
-    
-

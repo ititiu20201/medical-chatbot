@@ -127,3 +127,30 @@ class MedicalDataset(Dataset):
         return collated
     
 
+    def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
+    row = self.data.iloc[idx]
+    
+    # Previous code used 'input', but we need to match specialty_labels
+    input_text = str(row['input'])
+    
+    encoding = self.tokenizer(
+        input_text,
+        max_length=self.max_length,
+        padding='max_length',
+        truncation=True,
+        return_tensors='pt'
+    )
+    
+    item = {
+        'input_ids': encoding['input_ids'].squeeze(0),
+        'attention_mask': encoding['attention_mask'].squeeze(0),
+    }
+    
+    # Change 'labels' to 'specialty_labels' to match model
+    if 'specialty' in row and pd.notna(row['specialty']):
+        item['specialty_labels'] = torch.tensor(
+            self.specialty_map.get(row['specialty'], -1),
+            dtype=torch.long
+        )
+    
+    return item

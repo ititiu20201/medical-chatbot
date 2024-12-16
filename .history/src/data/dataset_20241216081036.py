@@ -125,5 +125,3 @@ class MedicalDataset(Dataset):
             collated['output_type'] = output_types
             
         return collated
-    
-

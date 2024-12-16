@@ -91,85 +91,49 @@ class EnhancedMedicalPhoBERT(nn.Module):
             for param in layer.parameters():
                 param.requires_grad = False
 
-    def forward(
-        self,
-        input_ids: torch.Tensor,
-        attention_mask: torch.Tensor,
-        specialty_labels: Optional[torch.Tensor] = None,
-        symptom_labels: Optional[torch.Tensor] = None,
-        treatment_labels: Optional[torch.Tensor] = None,
-        task: str = "all"
-    ) -> Dict[str, torch.Tensor]:
-        """
-        Forward pass
-        
-        Args:
-            input_ids: Input token IDs
-            attention_mask: Attention mask
-            specialty_labels: Specialty labels (optional)
-            symptom_labels: Symptom labels (optional)
-            treatment_labels: Treatment labels (optional)
-            task: Task to perform ("all", "specialty", "symptoms", "treatment")
-            
-        Returns:
-            Dict containing outputs and losses
-        """
-        # Get PhoBERT outputs
-        outputs = self.phobert(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
-            return_dict=True
-        )
-        
-        sequence_output = outputs.last_hidden_state[:, 0, :]  # [CLS] token
+    def forward(self,input_ids: torch.Tensor,attention_mask: torch.Tensor,specialty_labels: Optional[torch.Tensor] = None,symptom_labels: Optional[torch.Tensor] = None,treatment_labels: Optional[torch.Tensor] = None,task: str = "all") -> Dict[str, torch.Tensor]:
+    # Print input dimensions
+        logger.info(f"Input IDs shape: {input_ids.shape}")
+        logger.info(f"Attention mask shape: {attention_mask.shape}")
+
+    # Get PhoBERT outputs
+        outputs = self.phobert(input_ids=input_ids,attention_mask=attention_mask,return_dict=True)
+
+    # Get and print sequence output shape
+        sequence_output = outputs.last_hidden_state[:, 0, :]
+        logger.info(f"Sequence output shape: {sequence_output.shape}")
+    
         sequence_output = self.dropout(sequence_output)
-        
+    
         result = {}
         total_loss = 0.0
-        
-        # Specialty prediction
+    
+    # Specialty prediction
         if task in ["all", "specialty"]:
             specialty_logits = self.specialty_classifier(sequence_output)
+            logger.info(f"Specialty logits shape: {specialty_logits.shape}")
             result["specialty_logits"] = specialty_logits
-            
-            if specialty_labels is not None:
-                loss_fct = nn.CrossEntropyLoss()
-                specialty_loss = loss_fct(
-                    specialty_logits.view(-1, self.specialty_classifier[-1].out_features),
-                    specialty_labels.view(-1)
-                )
-                result["specialty_loss"] = specialty_loss
-                total_loss += specialty_loss
+        
+        if specialty_labels is not None:
+            logger.info(f"Specialty labels shape: {specialty_labels.shape}")
+            loss_fct = nn.CrossEntropyLoss()
+            specialty_loss = loss_fct(specialty_logits, specialty_labels)
+            result["specialty_loss"] = specialty_loss
+            total_loss += specialty_loss
 
-        # Symptom recognition
-        if task in ["all", "symptoms"]:
-            symptom_logits = self.symptom_detector(sequence_output)
-            result["symptom_logits"] = symptom_logits
-            
-            if symptom_labels is not None:
-                loss_fct = nn.BCEWithLogitsLoss()
-                symptom_loss = loss_fct(symptom_logits, symptom_labels.float())
-                result["symptom_loss"] = symptom_loss
-                total_loss += symptom_loss
-
-        # Treatment recommendation
+    # Print shapes before treatment recommendation
         if task in ["all", "treatment"]:
-            # Combine sequence output with symptom features
-            symptom_features = torch.sigmoid(self.symptom_detector(sequence_output))
+            symptom_features = self.symptom_detector(sequence_output)
+            logger.info(f"Symptom features shape: {symptom_features.shape}")
+            symptom_features = torch.sigmoid(symptom_features)
+        
+        # Concatenate correctly
             combined_features = torch.cat([sequence_output, symptom_features], dim=-1)
-            
+            logger.info(f"Combined features shape: {combined_features.shape}")
+        
             treatment_logits = self.treatment_recommender(combined_features)
+            logger.info(f"Treatment logits shape: {treatment_logits.shape}")
             result["treatment_logits"] = treatment_logits
-            
-            if treatment_labels is not None:
-                loss_fct = nn.BCEWithLogitsLoss()
-                treatment_loss = loss_fct(treatment_logits, treatment_labels.float())
-                result["treatment_loss"] = treatment_loss
-                total_loss += treatment_loss
-
-        # Severity assessment
-        severity_score = self.severity_assessor(sequence_output)
-        result["severity_score"] = severity_score
 
         if total_loss > 0:
             result["total_loss"] = total_loss

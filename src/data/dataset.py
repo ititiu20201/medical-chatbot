@@ -39,8 +39,20 @@ class MedicalDataset(Dataset):
         logger.info(f"Loaded {len(self.data)} samples from {data_path}")
         logger.info(f"Found {len(self.specialty_map)} unique specialties")
 
+    def verify_data(self):
+        """Verify data format matches model requirements"""
+        sample = self[0]  # Get first item
+        logger.info("\nVerifying dataset format:")
+        logger.info(f"Input IDs shape: {sample['input_ids'].shape}")
+        logger.info(f"Attention mask shape: {sample['attention_mask'].shape}")
+        if 'labels' in sample:
+            logger.info(f"Labels: {sample['labels']}")
+        logger.info(f"Specialty map: {self.specialty_map}")    
+
     def __len__(self) -> int:
         return len(self.data)
+    
+    
 
     def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
         """
@@ -97,29 +109,29 @@ class MedicalDataset(Dataset):
     @staticmethod
     def collate_fn(batch: list) -> Dict[str, torch.Tensor]:
         """
-        Custom collate function for DataLoader
-        
-        Args:
-            batch (list): List of samples
+    Custom collate function for DataLoader
+    
+    Args:
+        batch (list): List of samples
             
-        Returns:
-            Dict[str, torch.Tensor]: Batched samples
-        """
-        # Stack all tensors in the batch
+    Returns:
+        Dict[str, torch.Tensor]: Batched samples
+    """
+    # Stack all tensors in the batch
         input_ids = torch.stack([item['input_ids'] for item in batch])
         attention_mask = torch.stack([item['attention_mask'] for item in batch])
-        
+    
         collated = {
-            'input_ids': input_ids,
-            'attention_mask': attention_mask,
+        'input_ids': input_ids,
+        'attention_mask': attention_mask,
         }
-        
-        # Add labels if they exist
-        if 'labels' in batch[0]:
-            labels = torch.stack([item['labels'] for item in batch])
-            collated['labels'] = labels
+    
+    # Add specialty labels if they exist
+        if 'specialty_labels' in batch[0]:
+            specialty_labels = torch.stack([item['specialty_labels'] for item in batch])
+            collated['specialty_labels'] = specialty_labels
             
-        # Add output types if they exist
+    # Add output types if they exist
         if 'output_type' in batch[0]:
             output_types = [item['output_type'] for item in batch]
             collated['output_type'] = output_types

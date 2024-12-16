@@ -11,14 +11,10 @@ logger = logging.getLogger(__name__)
 
 class MedicalDataPreprocessor:
     def __init__(self, raw_data_path: str = 'data/raw'):
-        """
-        Initialize the preprocessor with path to raw data
-        
-        Args:
-            raw_data_path (str): Path to directory containing raw data files
-        """
+        """Initialize the preprocessor with path to raw data"""
         self.raw_data_path = Path(raw_data_path)
-        self.processed_data = None
+        self.processed_data_path = Path('data/processed')
+        self.processed_data_path.mkdir(parents=True, exist_ok=True)
 
     def load_json_file(self, file_path: Path) -> Dict:
         """Load JSON file and return data"""
@@ -29,24 +25,8 @@ class MedicalDataPreprocessor:
             logger.error(f"Error loading {file_path}: {str(e)}")
             return {}
 
-    def load_csv_file(self, file_path: Path) -> pd.DataFrame:
-        """Load CSV file and return DataFrame"""
-        try:
-            return pd.read_csv(file_path, encoding='utf-8', sep=';')
-        except Exception as e:
-            logger.error(f"Error loading {file_path}: {str(e)}")
-            return pd.DataFrame()
-
     def preprocess_text(self, text: str) -> str:
-        """
-        Preprocess Vietnamese text
-        
-        Args:
-            text (str): Input text
-            
-        Returns:
-            str: Preprocessed text
-        """
+        """Preprocess Vietnamese text"""
         if not isinstance(text, str):
             return ""
             
@@ -61,96 +41,78 @@ class MedicalDataPreprocessor:
         
         return text
 
-    def process_alpaca_data(self, data: List[Dict]) -> pd.DataFrame:
-        """Process alpaca format data"""
-        processed = []
-        for item in data:
-            processed.append({
-                'instruction': self.preprocess_text(item.get('instruction', '')),
-                'input': self.preprocess_text(item.get('input', '')),
-                'output': self.preprocess_text(item.get('output', ''))
-            })
-        return pd.DataFrame(processed)
-
-    def process_disease_data(self, data: pd.DataFrame) -> pd.DataFrame:
-        """Process disease database"""
-        processed = []
-        for _, row in data.iterrows():
-            processed.append({
-                'specialty': row.get('Medical Specialty', ''),
-                'disease': row.get('Disease Name', ''),
-                'symptoms': self.preprocess_text(str(row.get('Symptom', ''))),
-                'tests': self.preprocess_text(str(row.get('Medical Tests', ''))),
-                'medications': self.preprocess_text(str(row.get('Medications', '')))
-            })
-        return pd.DataFrame(processed)
-
-    def load_and_preprocess_all_data(self) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-        """
-        Load and preprocess all data files
-        
-        Returns:
-            Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]: 
-                (conversation_data, disease_data, symptom_data)
-        """
-        # Load conversation data
-        alpaca_path = self.raw_data_path / 'alpaca_data.json'
-        chatdoctor_path = self.raw_data_path / 'chatdoctor5k.json'
-        
-        alpaca_data = self.process_alpaca_data(self.load_json_file(alpaca_path))
-        chatdoctor_data = self.process_alpaca_data(self.load_json_file(chatdoctor_path))
-        conversation_data = pd.concat([alpaca_data, chatdoctor_data], ignore_index=True)
-        
-        # Load disease data
-        disease_db_path = self.raw_data_path / 'disease_database_mini.csv'
-        disease_data = self.process_disease_data(self.load_csv_file(disease_db_path))
-        
-        # Load symptom data
-        symptom_path = self.raw_data_path / 'disease_symptom.csv'
-        symptom_data = self.load_csv_file(symptom_path)
-        symptom_data['Symptom'] = symptom_data['Symptom'].apply(self.preprocess_text)
-        
-        return conversation_data, disease_data, symptom_data
-
     def create_training_data(self) -> pd.DataFrame:
-        """
-        Create training dataset by combining all processed data
-        
-        Returns:
-            pd.DataFrame: Combined training dataset
-        """
-        conv_data, disease_data, symptom_data = self.load_and_preprocess_all_data()
-        
-        # Combine conversation and disease data
-        training_data = []
-        
-        # Add disease-symptom pairs
-        for _, row in disease_data.iterrows():
-            training_data.append({
-                'input': row['symptoms'],
-                'specialty': row['specialty'],
-                'disease': row['disease'],
-                'output_type': 'diagnosis'
-            })
+        """Create training dataset"""
+        try:
+            # Load disease-symptom data
+            with open(self.raw_data_path / 'disease_symptom.csv', 'r', encoding='utf-8') as f:
+                lines = f.readlines()[1:]  # Skip header
+
+            training_data = []
+            specialties = set()
+
+            # Process disease-symptom data
+            for line in lines:
+                parts = line.strip().split(';', 2)
+                if len(parts) == 3:
+                    specialty, disease, symptoms = parts
+                    specialties.add(specialty.strip())
+                    try:
+                        symptom_list = eval(symptoms.strip())
+                        training_data.append({
+                            'input': ' '.join(symptom_list),
+                            'specialty': specialty.strip(),
+                            'output_type': 'specialty'
+                        })
+                    except:
+                        continue
+
+            # Load conversation data
+            alpaca_path = self.raw_data_path / 'alpaca_data.json'
+            chatdoctor_path = self.raw_data_path / 'chatdoctor5k.json'
             
-        # Add conversation samples
-        for _, row in conv_data.iterrows():
-            if row['input']:  # Only add if there's input
-                training_data.append({
-                    'input': row['input'],
-                    'output': row['output'],
-                    'output_type': 'conversation'
-                })
-        
-        return pd.DataFrame(training_data)
+            # Add conversation data
+            if alpaca_path.exists():
+                with open(alpaca_path, 'r', encoding='utf-8') as f:
+                    alpaca_data = json.load(f)
+                    for item in alpaca_data:
+                        if 'input' in item and 'output' in item:
+                            training_data.append({
+                                'input': item['input'],
+                                'output': item['output'],
+                                'output_type': 'conversation'
+                            })
+
+            if chatdoctor_path.exists():
+                with open(chatdoctor_path, 'r', encoding='utf-8') as f:
+                    chatdoctor_data = json.load(f)
+                    for item in chatdoctor_data:
+                        if 'input' in item and 'output' in item:
+                            training_data.append({
+                                'input': item['input'],
+                                'output': item['output'],
+                                'output_type': 'conversation'
+                            })
+
+            # Create DataFrame
+            df = pd.DataFrame(training_data)
+            
+            # Save specialty mapping
+            specialty_map = {spec: idx for idx, spec in enumerate(sorted(specialties))}
+            with open(self.processed_data_path / 'specialty_map.json', 'w', encoding='utf-8') as f:
+                json.dump(specialty_map, f, ensure_ascii=False, indent=2)
+
+            logger.info(f"Created dataset with {len(df)} samples")
+            logger.info(f"Found {len(specialties)} unique specialties: {specialties}")
+            
+            return df
+
+        except Exception as e:
+            logger.error(f"Error creating training data: {str(e)}")
+            raise
 
     def save_processed_data(self, output_path: str = 'data/processed'):
-        """
-        Save processed data to files
-        
-        Args:
-            output_path (str): Directory to save processed data
-        """
+        """Save processed data to files"""
         output_path = Path(output_path)
         output_path.mkdir(parents=True, exist_ok=True)
         

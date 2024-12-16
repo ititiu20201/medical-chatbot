@@ -1,21 +1,210 @@
-INFO:src.data.dataset:Loaded 9 samples from data/processed/train.csv
+INFO:__main__:Config: {'model': {'name': 'vinai/phobert-base', 'max_length': 256, 'batch_size': 32, 'learning_rate': 2e-05, 'epochs': 10, 'warmup_steps': 1000, 'num_symptoms': 100, 'num_treatments': 50}, 'data': {'train_file': 'data/processed/train.csv', 'val_file': 'data/processed/val.csv', 'test_file': 'data/processed/test.csv'}, 'training': {'seed': 42, 'device': 'cuda', 'num_workers': 4, 'batch_size': 32, 'specialty_weight': 1.0, 'symptoms_weight': 0.8, 'treatment_weight': 0.8, 'gradient_accumulation_steps': 1}, 'paths': {'model_save_path': 'data/models', 'log_dir': 'logs'}, 'inference': {'top_k': 3, 'treatment_threshold': 0.5}}
+INFO:src.data.dataset:Loaded 17 samples from data/processed/train.csv
 INFO:src.data.dataset:Found 5 unique specialties
-INFO:src.data.dataset:Loaded 1 samples from data/processed/val.csv
+INFO:src.data.dataset:Loaded 2 samples from data/processed/val.csv
 INFO:src.data.dataset:Found 5 unique specialties
-INFO:src.data.dataset:Loaded 2 samples from data/processed/test.csv
+INFO:src.data.dataset:Loaded 3 samples from data/processed/test.csv
 INFO:src.data.dataset:Found 5 unique specialties
+INFO:__main__:Specialty map: {'Tiêu hóa': 0, 'Nhãn khoa': 1, 'Tâm thần học': 2, 'Độc chất/Tâm thần học': 3, 'Phẫu thuật/Tiêu hóa': 4}
+INFO:__main__:Number of specialties: 5
 INFO:src.models.enhanced_phobert:Initialized Enhanced Medical PhoBERT with:
 - 5 specialties
 - 100 symptoms
 - 50 treatments
-ERROR:__main__:Training failed: 'epochs'
-Traceback (most recent call last):
-  File "/home/hvusynh/medical-chatbot/src/training/train.py", line 140, in <module>
-    main()
-  File "/home/hvusynh/medical-chatbot/src/training/train.py", line 134, in main
-    train_model()
-  File "/home/hvusynh/medical-chatbot/src/training/train.py", line 109, in train_model
-    num_epochs=config['training']['epochs'],
-KeyError: 'epochs'
+INFO:__main__:Model hidden size: 768
+INFO:src.training.enhanced_trainer:Trainer initialized on cuda
+INFO:src.training.enhanced_trainer:Starting training...
+INFO:src.training.enhanced_trainer:Epoch 1/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  1.96it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  1.80it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  5.62it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.29it/s]
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/best_model.pt
+INFO:src.training.enhanced_trainer:Epoch 1 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_1.pt
+INFO:src.training.enhanced_trainer:Epoch 2/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.27it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.47it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  5.92it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.42it/s]
+INFO:src.training.enhanced_trainer:Epoch 2 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_2.pt
+INFO:src.training.enhanced_trainer:Epoch 3/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  1.56it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  1.43it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  5.91it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]
+INFO:src.training.enhanced_trainer:Epoch 3 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_3.pt
+INFO:src.training.enhanced_trainer:Epoch 4/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.19it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.44it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  5.89it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.44it/s]
+INFO:src.training.enhanced_trainer:Epoch 4 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_4.pt
+INFO:src.training.enhanced_trainer:Epoch 5/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.15it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.38it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  6.05it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.61it/s]
+INFO:src.training.enhanced_trainer:Epoch 5 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_5.pt
+INFO:src.training.enhanced_trainer:Epoch 6/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  6.07it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s]
+INFO:src.training.enhanced_trainer:Epoch 6 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_6.pt
+INFO:src.training.enhanced_trainer:Epoch 7/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.59it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  1.60it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  1.47it/s]
+INFO:src.training.enhanced_trainer:Epoch 7 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_7.pt
+INFO:src.training.enhanced_trainer:Epoch 8/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.37it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.54it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.59it/s]
+INFO:src.training.enhanced_trainer:Epoch 8 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_8.pt
+INFO:src.training.enhanced_trainer:Epoch 9/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.41it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.54it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  6.11it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.59it/s]
+INFO:src.training.enhanced_trainer:Epoch 9 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_9.pt
+INFO:src.training.enhanced_trainer:Epoch 10/10
+Training:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([17, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([17, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([17, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([17, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([17, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([17, 50])
+Training:   0%|          | 0/1 [00:00<?, ?it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  4.20it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]Training: 100%|██████████| 1/1 [00:00<00:00,  3.46it/s, loss=0, specialty_loss=0, symptoms_loss=0, treatment_loss=0]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]INFO:src.models.enhanced_phobert:Input IDs shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Attention mask shape: torch.Size([2, 256])
+INFO:src.models.enhanced_phobert:Sequence output shape: torch.Size([2, 768])
+INFO:src.models.enhanced_phobert:Specialty logits shape: torch.Size([2, 5])
+INFO:src.models.enhanced_phobert:Symptom features shape: torch.Size([2, 100])
+INFO:src.models.enhanced_phobert:Combined features shape: torch.Size([2, 868])
+INFO:src.models.enhanced_phobert:Treatment logits shape: torch.Size([2, 50])
+Evaluating: 100%|██████████| 1/1 [00:00<00:00,  6.13it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00,  4.64it/s]
+INFO:src.training.enhanced_trainer:Epoch 10 - Train Loss: 0.0000, Val Loss: 0.0000, Val Accuracy: 0.0000
+INFO:src.training.enhanced_trainer:Checkpoint saved to data/models/checkpoint_epoch_10.pt
+INFO:__main__:Training completed successfully!
 Test job
 Job finished

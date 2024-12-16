@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "src/training/train.py", line 2, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Test job
+Job finished

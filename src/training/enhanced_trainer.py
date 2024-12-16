@@ -1,7 +1,7 @@
+#enhanced_trainer.py
 import torch
 from torch.utils.data import DataLoader
 from torch.optim import AdamW
-from torch.optim.lr_scheduler import get_linear_schedule_with_warmup
 from transformers import set_seed
 import numpy as np
 import logging
@@ -10,6 +10,7 @@ from typing import Dict, List, Optional
 from tqdm import tqdm
 import json
 from sklearn.metrics import f1_score
+from transformers import get_linear_schedule_with_warmup
 
 from ..models.enhanced_phobert import EnhancedMedicalPhoBERT
 

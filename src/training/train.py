@@ -1,13 +1,22 @@
+#train.py
 import logging
 import torch
 import json
 from pathlib import Path
+import sys
+import os
 from torch.utils.data import DataLoader
 from sklearn.metrics import classification_report
 
-from ..models.enhanced_phobert import EnhancedMedicalPhoBERT
-from ..data.dataset import MedicalDataset
-from .enhanced_trainer import EnhancedTrainer
+# Add project root to path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(current_dir))
+sys.path.append(project_root)
+
+from src.models.enhanced_phobert import EnhancedMedicalPhoBERT
+from src.data.dataset import MedicalDataset
+from src.training.enhanced_trainer import EnhancedTrainer
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

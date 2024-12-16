@@ -58,10 +58,10 @@ def create_dataloaders(config: dict) -> tuple:
     )
     
     val_loader = DataLoader(
-        val_dataset,
-        batch_size=config['training']['batch_size'],
-        shuffle=False,
-        num_workers=config['training']['num_workers']
+    val_dataset,
+    batch_size=config['training']['batch_size'],
+    shuffle=False,
+    num_workers=config['training']['num_workers']
     )
     
     test_loader = DataLoader(

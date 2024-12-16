@@ -12,7 +12,8 @@ PyYAML>=5.1
 git+https://github.com/pytorch/fairseq.git@v0.10.2#egg=fairseq
 
 # PhoBERT specific
-# fastBPE>=0.1.0
+fastBPE>=0.1.0
+# fairseq>=0.10.2
 sentencepiece>=0.1.96
 
 # API and web interface

@@ -7,7 +7,6 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=40000M
 source /home/hvusynh/anaconda3/envs/torch-env/bin/activate
-xport PYTHONPATH=$PYTHONPATH:$(pwd)
 python src/training/train.py
 echo "Test job" 
 echo "Job finished"

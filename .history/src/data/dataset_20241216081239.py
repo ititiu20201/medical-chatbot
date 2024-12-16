@@ -1,4 +1,3 @@
-#dataset.py
 import torch
 from torch.utils.data import Dataset
 import pandas as pd
@@ -126,5 +125,3 @@ class MedicalDataset(Dataset):
             collated['output_type'] = output_types
             
         return collated
-    
-

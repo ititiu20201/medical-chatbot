@@ -1,4 +1,3 @@
-#dataset.py
 import torch
 from torch.utils.data import Dataset
 import pandas as pd
@@ -44,42 +43,32 @@ class MedicalDataset(Dataset):
         return len(self.data)
 
     def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
-        """
-        Get a single item from the dataset
-        
-        Args:
-            idx (int): Index of the item
-            
-        Returns:
-            Dict[str, torch.Tensor]: Dictionary containing input_ids, attention_mask,
-                                   and labels (if available)
-        """
-        row = self.data.iloc[idx]
-        
-        # Prepare input text
-        input_text = str(row['input'])
-        
-        # Tokenize input
-        encoding = self.tokenizer(
-            input_text,
-            max_length=self.max_length,
-            padding='max_length',
-            truncation=True,
-            return_tensors='pt'
+    row = self.data.iloc[idx]
+    
+    # Previous code used 'input', but we need to match specialty_labels
+    input_text = str(row['input'])
+    
+    encoding = self.tokenizer(
+        input_text,
+        max_length=self.max_length,
+        padding='max_length',
+        truncation=True,
+        return_tensors='pt'
+    )
+    
+    item = {
+        'input_ids': encoding['input_ids'].squeeze(0),
+        'attention_mask': encoding['attention_mask'].squeeze(0),
+    }
+    
+    # Change 'labels' to 'specialty_labels' to match model
+    if 'specialty' in row and pd.notna(row['specialty']):
+        item['specialty_labels'] = torch.tensor(
+            self.specialty_map.get(row['specialty'], -1),
+            dtype=torch.long
         )
-        
-        # Remove batch dimension added by tokenizer
-        item = {
-            'input_ids': encoding['input_ids'].squeeze(0),
-            'attention_mask': encoding['attention_mask'].squeeze(0),
-        }
-        
-        # Add labels if available
-        if 'specialty' in row and pd.notna(row['specialty']):
-            item['labels'] = torch.tensor(
-                self.specialty_map.get(row['specialty'], -1),
-                dtype=torch.long
-            )
+    
+    
         
         # Add output type
         if 'output_type' in row:
@@ -126,5 +115,3 @@ class MedicalDataset(Dataset):
             collated['output_type'] = output_types
             
         return collated
-    
-

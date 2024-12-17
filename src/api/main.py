@@ -1,17 +1,29 @@
 from fastapi import FastAPI, WebSocket, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional, Dict
 import json
 import logging
 from datetime import datetime
+import sys
+from pathlib import Path
 
-from ..models.chatbot import MedicalChatbot
+# Add project root to Python path
+project_root = Path(__file__).parent.parent.parent
+sys.path.append(str(project_root))
+
+from src.models.chatbot import MedicalChatbot
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Medical Chatbot API")
+app = FastAPI(
+    title="Medical Chatbot API",
+    description="API for Vietnamese Medical Chatbot using PhoBERT",
+    version="1.0.0"
+)
 
 # Add CORS middleware
 app.add_middleware(
@@ -33,6 +45,21 @@ class ChatInput(BaseModel):
 class QueueRequest(BaseModel):
     """Schema for queue status request"""
     specialty: str
+
+@app.get("/")
+async def root():
+    """Redirect to API documentation"""
+    return RedirectResponse(url="/docs")
+
+@app.get("/api/specialties")
+async def get_specialties():
+    """Get list of available medical specialties"""
+    try:
+        specialty_map = chatbot.model.get_specialty_map()
+        return {"specialties": list(specialty_map.keys())}
+    except Exception as e:
+        logger.error(f"Error getting specialties: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/chat")
 async def chat(chat_input: ChatInput):
@@ -136,6 +163,15 @@ async def websocket_endpoint(websocket: WebSocket):
         logger.error(f"WebSocket error: {str(e)}")
         await websocket.close()
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
+    return {
+        "status": "healthy",
+        "timestamp": datetime.now().isoformat(),
+        "model": "loaded" if chatbot and chatbot.model else "not_loaded"
+    }
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

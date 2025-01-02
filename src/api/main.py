@@ -15,6 +15,7 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 
 from src.models.chatbot import MedicalChatbot
+from src.api.routes import symptom_analysis
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -32,8 +33,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-app.include_router(symptom_analysis.router, prefix="/api", tags=["symptoms"])
 
 # Initialize chatbot
 chatbot = MedicalChatbot()
@@ -74,7 +73,6 @@ async def chat(chat_input: ChatInput):
         Dict containing response, patient_id, state, and optional medical_record
     """
     try:
-        # Start new conversation if needed
         if not hasattr(chatbot, 'current_patient') or chat_input.patient_id != chatbot.current_patient:
             response = chatbot.start_conversation(chat_input.patient_id)
             return {
@@ -83,10 +81,8 @@ async def chat(chat_input: ChatInput):
                 "state": chatbot.conversation_state
             }
         
-        # Get response for user message
         result = chatbot.get_response(chat_input.message)
         
-        # Include medical record if conversation is completed
         if result["state"] == "completed" and result.get("collected_info"):
             return {
                 "response": result["response"],
@@ -107,15 +103,7 @@ async def chat(chat_input: ChatInput):
 
 @app.post("/queue-status")
 async def get_queue_status(request: QueueRequest):
-    """
-    Get queue status for a specialty
-    
-    Args:
-        request: QueueRequest object containing specialty
-        
-    Returns:
-        Dict containing queue status information
-    """
+    """Get queue status for a specialty"""
     try:
         status = chatbot.get_queue_status(request.specialty)
         return status
@@ -130,11 +118,9 @@ async def websocket_endpoint(websocket: WebSocket):
     
     try:
         while True:
-            # Receive message
             data = await websocket.receive_text()
             data = json.loads(data)
             
-            # Process message
             if not hasattr(chatbot, 'current_patient'):
                 response = chatbot.start_conversation(data.get('patient_id'))
                 await websocket.send_json({
@@ -145,7 +131,6 @@ async def websocket_endpoint(websocket: WebSocket):
             else:
                 result = chatbot.get_response(data['message'])
                 
-                # Include medical record if conversation is completed
                 if result["state"] == "completed" and result.get("collected_info"):
                     await websocket.send_json({
                         "response": result["response"],
@@ -164,8 +149,12 @@ async def websocket_endpoint(websocket: WebSocket):
         logger.error(f"WebSocket error: {str(e)}")
         await websocket.close()
 
+# Include routers
+app.include_router(symptom_analysis.router, prefix="/api", tags=["symptoms"])
+
 @app.get("/health")
 async def health_check():
+    """Health check endpoint"""
     return {"status": "healthy"}
 
 if __name__ == "__main__":

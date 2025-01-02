@@ -14,14 +14,19 @@ class EnhancedMedicalPhoBERT(nn.Module):
         num_specialties: int = 0,
         num_symptoms: int = 0,
         num_treatments: int = 0,
-        dropout_rate: float = 0.1
+        dropout_rate: float = 0.1,
+        device: str = None
     ):
         """Enhanced Medical PhoBERT model"""
         super().__init__()
         
+        # Set device
+        self.device = device if device else ('cuda' if torch.cuda.is_available() else 'cpu')
+        logger.info(f"Using device: {self.device}")
+        
         # Load PhoBERT
         self.config = AutoConfig.from_pretrained(model_name)
-        self.phobert = AutoModel.from_pretrained(model_name)
+        self.phobert = AutoModel.from_pretrained(model_name).to(self.device)
         
         # Freeze initial layers
         self._freeze_layers(num_layers_to_freeze=8)
@@ -36,7 +41,7 @@ class EnhancedMedicalPhoBERT(nn.Module):
             nn.ReLU(),
             nn.Dropout(dropout_rate),
             nn.Linear(hidden_size, num_specialties)
-        )
+        ).to(self.device)
         
         # Symptom recognition
         self.symptom_detector = nn.Sequential(
@@ -44,7 +49,7 @@ class EnhancedMedicalPhoBERT(nn.Module):
             nn.ReLU(),
             nn.Dropout(dropout_rate),
             nn.Linear(hidden_size, num_symptoms)
-        )
+        ).to(self.device)
         
         # Treatment recommendation
         combined_size = hidden_size + num_symptoms  # Concatenated features size
@@ -53,7 +58,7 @@ class EnhancedMedicalPhoBERT(nn.Module):
             nn.ReLU(),
             nn.Dropout(dropout_rate),
             nn.Linear(hidden_size, num_treatments)
-        )
+        ).to(self.device)
         
         logger.info(
             f"Initialized Enhanced Medical PhoBERT with:"
@@ -78,6 +83,12 @@ class EnhancedMedicalPhoBERT(nn.Module):
         labels: Optional[torch.Tensor] = None,
     ) -> Dict[str, torch.Tensor]:
         """Forward pass"""
+        # Move inputs to device
+        input_ids = input_ids.to(self.device)
+        attention_mask = attention_mask.to(self.device)
+        if labels is not None:
+            labels = labels.to(self.device)
+            
         # Get PhoBERT outputs
         outputs = self.phobert(
             input_ids=input_ids,
@@ -120,8 +131,9 @@ class EnhancedMedicalPhoBERT(nn.Module):
 
     def save_pretrained(self, save_path: str):
         """Save model"""
+        state_dict = {k: v.cpu() for k, v in self.state_dict().items()}
         torch.save({
-            'model_state_dict': self.state_dict(),
+            'model_state_dict': state_dict,
             'config': self.config
         }, save_path)
         logger.info(f"Model saved to {save_path}")
@@ -132,15 +144,30 @@ class EnhancedMedicalPhoBERT(nn.Module):
         load_path: str,
         num_specialties: int,
         num_symptoms: int,
-        num_treatments: int
+        num_treatments: int,
+        device: str = None
     ):
         """Load model"""
-        checkpoint = torch.load(load_path)
+        # Set device
+        if device is None:
+            device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        
+        # Load checkpoint with CPU map location
+        checkpoint = torch.load(load_path, map_location='cpu')
+        
+        # Create model instance
         model = cls(
             num_specialties=num_specialties,
             num_symptoms=num_symptoms,
-            num_treatments=num_treatments
+            num_treatments=num_treatments,
+            device=device
         )
+        
+        # Load state dict
         model.load_state_dict(checkpoint['model_state_dict'])
-        logger.info(f"Model loaded from {load_path}")
+        
+        # Move model to device
+        model = model.to(device)
+        
+        logger.info(f"Model loaded from {load_path} and moved to {device}")
         return model

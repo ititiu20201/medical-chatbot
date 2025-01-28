@@ -1,0 +1,411 @@
+{
+  "routing_rules": [
+    {
+      "department_id": "1",
+      "department_name": "Nhãn khoa",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Đau mắt nghiêm trọng",
+            "Mắt đỏ kèm sưng tấy",
+            "Sưng đau mắt",
+            "Giảm hoặc mất thị lực đột ngột",
+            "Chảy nước mắt không kiểm soát",
+            "Xuất hiện mụn hoặc vết lồi trong mắt"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Đau mắt",
+            "Mắt đỏ",
+            "Đỏ mắt",
+            "Mắt sưng",
+            "Giảm thị lực",
+            "Mắt yếu",
+            "Mắt kém",
+            "Ngứa mắt",
+            "Nổi mụn mắt"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Chảy nước mắt",
+            "Ngứa mắt và cảm giác khó chịu"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 20
+      }
+    },
+    {
+      "department_id": "2",
+      "department_name": "Tâm lý",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Các cử động không tự chủ bất thường",
+            "Nhịp tim không đều",
+            "Nhịp tim bất thường",
+            "Sợ hãi và ám ảnh",
+            "Sợ hãi",
+            "Ám ảnh"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Nhịp tim tăng",
+            "Trầm cảm",
+            "Đau ngực dữ dội",
+            "Khó thở",
+            "Đau đầu",
+            "Mất ngủ",
+            "Đánh trống ngực"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Lo lắng và căng thẳng",
+            "Lo lắng",
+            "Căng thẳng"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 19
+      }
+    },
+    {
+      "department_id": "3",
+      "department_name": "Tiêu hoá",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Đau bụng dữ dội",
+            "Thay đổi hình dạng phân",
+            "Đau phần thân dưới",
+            "Chuột rút và co thắt",
+            "Chảy máu trực tràng"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Có máu trong phân"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Táo bón"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 3
+      }
+    },
+    {
+      "department_id": "4",
+      "department_name": "Độc chất học",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Trầm cảm",
+            "Rối loạn trí nhớ",
+            "Suy hô hấp",
+            "Triệu chứng cảm xúc",
+            "Hôn mê"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Đau đầu",
+            "Lạm dụng rượu"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Yếu đuối",
+            "Ngất xỉu",
+            "Triệu chứng cảm xúc"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 18
+      }
+    },
+    {
+      "department_id": "5",
+      "department_name": "Răng Hàm Mặt",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Khó chịu ở vùng răng mọc và lan ra vùng xung quanh"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Cảm giác đau nhức",
+            "Đau hàm",
+            "Răng nhạy cảm",
+            "Đau nướu răng",
+            "Sưng hàm",
+            "Chảy máu răng"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Hôi miệng",
+            "Nhức đầu",
+            "Đau răng"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 18
+      }
+    },
+    {
+      "department_id": "6",
+      "department_name": "Hô hấp",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Đau ngực dữ dội"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Ho",
+            "Khó thở",
+            "Đổ mồ hôi ban đêm",
+            "Đau cơ"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Khó chịu",
+            "Ho khan"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 18
+      }
+    },
+    {
+      "department_id": "7",
+      "department_name": "Da liễu",
+      "severity_indicators": {
+        "severe": {
+          "symptoms": [
+            "Xuất hiện mụn nhọt hoặc sưng đỏ trên da",
+            "Cảm giác đau nhức tại vùng bị u nang",
+            "Vết sưng đỏ trông giống như mụn nhọt trên da"
+          ]
+        },
+        "moderate": {
+          "symptoms": [
+            "Mụn có mủ hoặc chảy dịch",
+            "Da bị viêm hoặc nóng khi chạm vào",
+            "Mụn nhọt"
+          ]
+        },
+        "mild": {
+          "symptoms": [
+            "Mụn nhỏ",
+            "Vết sưng đỏ trông giống như mụn nhọt trên da"
+          ]
+        }
+      },
+      "capacity": {
+        "current_queue": 18
+      }
+    },{
+        "department_id": "8",
+        "department_name": "Chỉnh hình",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+              "Sưng đau tại vị trí tổn thương",
+              "Bầm tím và vết thương hở"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+              "Khả năng vận động bị hạn chế",
+              "Khó khăn trong các động tác gập và duỗi"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+              "Bầm tím"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      },{
+        "department_id": "9",
+        "department_name": "Ung thư",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+          "Sụt cân",
+          "Đau nhức cơ, xương",
+          "Khó nói",
+          "Cơn ho kéo dài",
+          "Khó thở",
+          "Ho ra máu"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+          "Đau ngực, tức ngực",
+          "Đau ngực",
+          "Tức ngực",
+          "Thở khò khè"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+          "Khàn giọng"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      },{
+        "department_id": "10",
+        "department_name": "Tai Mũi Họng",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+              "Dây thanh âm đóng không kín",
+          "Dây thanh âm rung không đồng đều khi phát âm"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+              "Khó nói"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+              "Khàn giọng",
+          "Đau họng"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      },{
+        "department_id": "11",
+        "department_name": "Di truyền",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+              "Cổ ngắn",
+          "Xuất hiện các nếp gấp da dọc xuống vai",
+          "Chân tóc thấp ở phía sau cổ",
+          "Vóc dáng thấp",
+          "Thiếu phát triển"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+              "Tai thấp"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+              "Bàn chân bàn tay bị sưng ngay từ khi sinh ra"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      },{
+        "department_id": "12",
+        "department_name": "Tiết niệu",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+              "Các triệu chứng ở bìu và tinh hoàn",
+              "Đau tinh hoàn"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+          "Sưng bìu"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+          "Đi tiểu đau"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      },{
+        "department_id": "13",
+        "department_name": "Phụ khoa",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+          "Đi tiểu không tự chủ",
+          "Đau khi giao hợp",
+          "tăng dịch âm đạo",
+          "giảm ham muốn"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+          "Ngứa âm đạo",
+          "Khô âm đạo"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+          "Ra khí hư",
+          "Đi tiểu đau",
+          "Tiểu đau"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      },{
+        "department_id": "14",
+        "department_name": "Bệnh truyền nhiễm",
+        "severity_indicators": {
+          "severe": {
+            "symptoms": [
+          "Loét miệng"
+            ]
+          },
+          "moderate": {
+            "symptoms": [
+          "Tổn thương da môi",
+          "Nóng, đỏ lan nhanh"
+            ]
+          },
+          "mild": {
+            "symptoms": [
+          "Sưng môi"
+            ]
+          }
+        },
+        "capacity": {
+          "current_queue": 18
+        }
+      }
+    ]
+  }

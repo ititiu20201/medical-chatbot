@@ -1,0 +1,906 @@
+{
+    "analysis_rules": [
+      {
+        "symptoms": ["Đi tiểu không tự chủ"],
+        "departments": ["Phụ khoa"],
+        "follow_up_questions": [
+          "Xảy ra khi nào?",
+          "Mức độ són tiểu như thế nào?",
+          "Có đau khi đi tiểu không?",
+          "Có tiền sử sinh nở không?",
+          "Có cảm giác buồn tiểu gấp không?"
+        ],
+        "severity_indicators": {
+          "mild": [
+            "són nhẹ khi ho, cười",
+            "không đau",
+            "không nhiễm trùng"
+          ],
+          "moderate": [
+            "són nhiều",
+            "có đau nhẹ",
+            "ảnh hưởng sinh hoạt"
+          ],
+          "severe": [
+            "són hoàn toàn",
+            "đau nhiều",
+            "có dấu hiệu nhiễm trùng",
+            "sốt cao"
+          ]
+        }
+      },
+      {
+        "symptoms": ["Vết sưng đỏ trông giống như mụn nhọt trên da"],
+        "departments": ["Da liễu"],
+        "follow_up_questions": [
+          "Vết sưng xuất hiện bao lâu rồi?",
+          "Có đau không?",
+          "Có nóng không?",
+          "Có lan rộng không?",
+          "Có sốt không?"
+        ],
+        "severity_indicators": {
+          "mild": [
+            "sưng nhẹ",
+            "không đau",
+            "không lan rộng"
+          ],
+          "moderate": [
+            "sưng và đau",
+            "hơi nóng",
+            "lan rộng nhẹ"
+          ],
+          "severe": [
+            "sưng đỏ nhiều",
+            "đau dữ dội",
+            "lan rộng nhanh",
+            "sốt cao"
+          ]
+        }
+      },
+      {
+        "symptoms": ["Đau đầu"],
+        "departments": ["Tâm lý", "Độc chất học"],
+        "follow_up_questions": [
+          "Mức độ đau như thế nào?",
+          "Đau kéo dài bao lâu?",
+          "Vị trí đau ở đâu?",
+          "Có triệu chứng kèm theo không (như buồn nôn, chóng mặt)?",
+          "Có uống thuốc giảm đau không? Nếu có thì hiệu quả không?"
+        ],
+        "severity_indicators": {
+          "mild": [
+            "đau nhẹ",
+            "vẫn sinh hoạt bình thường",
+            "đau không liên tục",
+            "đáp ứng với thuốc giảm đau thông thường"
+          ],
+          "moderate": [
+            "đau vừa",
+            "ảnh hưởng sinh hoạt",
+            "đau kéo dài trên 24 giờ",
+            "kèm theo buồn nôn nhẹ"
+          ],
+          "severe": [
+            "đau dữ dội",
+            "không thể sinh hoạt",
+            "kèm theo nôn mửa dữ dội",
+            "đau đột ngột và nghiêm trọng"
+          ]
+        }
+      },
+      {
+        "symptoms": ["Khó thở"],
+        "departments": ["Tâm lý", "Hô hấp", "Ung thư"],
+        "follow_up_questions": [
+          "Khó thở xuất hiện khi nào?",
+          "Có đau ngực kèm theo không?",
+          "Khó thở khi vận động hay cả khi nghỉ ngơi?",
+          "Có ho kèm theo không?",
+          "Có tiền sử bệnh phổi không?"
+        ],
+        "severity_indicators": {
+          "mild": [
+            "khó thở nhẹ khi gắng sức",
+            "không ảnh hưởng sinh hoạt",
+            "không có triệu chứng kèm theo"
+          ],
+          "moderate": [
+            "khó thở khi vận động nhẹ",
+            "có ho khan kèm theo",
+            "ảnh hưởng đến sinh hoạt"
+          ],
+          "severe": [
+            "khó thở cả khi nghỉ ngơi",
+            "tím tái",
+            "đau ngực dữ dội kèm theo",
+            "không thể nói thành câu"
+          ]
+        }
+      },
+    {
+      "symptoms": ["Đau ngực"],
+      "departments": ["Tâm lý", "Hô hấp", "Ung thư"],
+      "follow_up_questions": [
+        "Đau như thế nào (âm ỉ, nhói, tức)?",
+        "Đau kéo dài bao lâu?",
+        "Có lan ra vùng khác không (cánh tay, vai, lưng)?",
+        "Đau tăng khi nào (vận động, hít thở sâu)?",
+        "Có kèm theo khó thở không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đau âm ỉ",
+          "đau khi ấn vào",
+          "không ảnh hưởng hô hấp"
+        ],
+        "moderate": [
+          "đau tức ngực",
+          "đau khi vận động",
+          "có khó thở nhẹ kèm theo"
+        ],
+        "severe": [
+          "đau dữ dội",
+          "đau lan ra cánh tay hoặc hàm",
+          "kèm theo vã mồ hôi",
+          "khó thở nặng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Khó nói"],
+      "departments": ["Ung thư", "Tai Mũi Họng"],
+      "follow_up_questions": [
+        "Khó nói xuất hiện đột ngột hay từ từ?",
+        "Có khàn tiếng kèm theo không?",
+        "Có đau họng không?",
+        "Có khó nuốt không?",
+        "Có tiền sử bệnh về họng không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "khó nói nhẹ",
+          "xuất hiện sau khi nói nhiều",
+          "không có triệu chứng kèm theo"
+        ],
+        "moderate": [
+          "khó nói kèm theo đau họng",
+          "tiếng nói không rõ",
+          "có khó nuốt nhẹ"
+        ],
+        "severe": [
+          "không thể nói",
+          "khó thở kèm theo",
+          "sưng họng nhiều",
+          "khó nuốt nghiêm trọng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Đi tiểu đau"],
+      "departments": ["Tiết niệu", "Phụ khoa"],
+      "follow_up_questions": [
+        "Đau khi nào (trước, trong hay sau khi tiểu)?",
+        "Có máu trong nước tiểu không?",
+        "Có tiểu nhiều lần không?",
+        "Có sốt không?",
+        "Có đau vùng bụng dưới không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đau nhẹ khi tiểu",
+          "không có máu trong nước tiểu",
+          "không sốt"
+        ],
+        "moderate": [
+          "đau rát nhiều khi tiểu",
+          "tiểu nhiều lần",
+          "có đau bụng dưới"
+        ],
+        "severe": [
+          "đau dữ dội",
+          "có máu trong nước tiểu",
+          "sốt cao",
+          "đau quặn thận"
+        ]
+      }
+    }
+  ,
+    {
+      "symptoms": ["Đau mắt"],
+      "departments": ["Nhãn khoa"],
+      "follow_up_questions": [
+        "Mức độ đau như thế nào?",
+        "Có bị đỏ mắt không?",
+        "Có cảm giác như có dị vật không?",
+        "Có nhìn mờ không?",
+        "Có tiếp xúc với hóa chất hoặc bị chấn thương không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đau nhẹ",
+          "không đỏ mắt",
+          "không ảnh hưởng thị lực"
+        ],
+        "moderate": [
+          "đau vừa phải",
+          "có đỏ mắt",
+          "nhìn hơi mờ"
+        ],
+        "severe": [
+          "đau dữ dội",
+          "đỏ mắt nhiều",
+          "thị lực giảm đột ngột",
+          "có tiền sử chấn thương"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Trầm cảm"],
+      "departments": ["Tâm lý", "Độc chất học"],
+      "follow_up_questions": [
+        "Triệu chứng kéo dài bao lâu?",
+        "Có ý định tự tử không?",
+        "Có rối loạn giấc ngủ không?",
+        "Có sử dụng rượu hoặc chất kích thích không?",
+        "Có đang dùng thuốc điều trị không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "buồn chán nhẹ",
+          "vẫn sinh hoạt bình thường",
+          "không có ý định tự tử"
+        ],
+        "moderate": [
+          "trầm cảm ảnh hưởng công việc",
+          "rối loạn giấc ngủ",
+          "có suy nghĩ tiêu cực"
+        ],
+        "severe": [
+          "có ý định tự tử",
+          "không thể tự chăm sóc",
+          "có dấu hiệu loạn thần"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Đau bụng dữ dội"],
+      "departments": ["Tiêu hoá"],
+      "follow_up_questions": [
+        "Đau ở vị trí nào?",
+        "Đau liên tục hay từng cơn?",
+        "Có nôn hoặc tiêu chảy không?",
+        "Có sốt không?",
+        "Đã ăn gì trong 24h qua?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đau âm ỉ",
+          "vẫn ăn uống được",
+          "không sốt"
+        ],
+        "moderate": [
+          "đau từng cơn",
+          "có nôn nhẹ",
+          "sốt nhẹ"
+        ],
+        "severe": [
+          "đau dữ dội liên tục",
+          "nôn nhiều",
+          "sốt cao",
+          "bụng cứng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Cảm giác đau nhức"],
+      "departments": ["Răng Hàm Mặt"],
+      "follow_up_questions": [
+        "Đau ở răng nào?",
+        "Đau khi nào (ăn nóng/lạnh, cắn)?",
+        "Có sưng nướu không?",
+        "Có chảy máu không?",
+        "Có viêm nhiễm không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đau nhẹ",
+          "chỉ đau khi ăn nóng/lạnh",
+          "không sưng nướu"
+        ],
+        "moderate": [
+          "đau liên tục",
+          "có sưng nướu",
+          "chảy máu khi đánh răng"
+        ],
+        "severe": [
+          "đau dữ dội",
+          "sưng nướu nhiều",
+          "sốt cao",
+          "khó mở miệng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Khàn giọng"],
+      "departments": ["Ung thư", "Tai Mũi Họng"],
+      "follow_up_questions": [
+        "Khàn giọng kéo dài bao lâu?",
+        "Có đau họng kèm theo không?",
+        "Có hút thuốc không?",
+        "Có khó thở không?",
+        "Có nuốt đau không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "khàn giọng nhẹ",
+          "mới xuất hiện",
+          "không đau họng"
+        ],
+        "moderate": [
+          "khàn giọng kéo dài > 2 tuần",
+          "có đau họng",
+          "có ho kèm theo"
+        ],
+        "severe": [
+          "khàn giọng nặng",
+          "khó thở",
+          "không thể nuốt",
+          "sụt cân nhanh"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Ngứa âm đạo"],
+      "departments": ["Phụ khoa"],
+      "follow_up_questions": [
+        "Ngứa kéo dài bao lâu?",
+        "Có khí hư bất thường không?",
+        "Có mùi hôi không?",
+        "Có đau khi đi tiểu không?",
+        "Đã điều trị gì chưa?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "ngứa nhẹ",
+          "không có khí hư bất thường",
+          "không đau"
+        ],
+        "moderate": [
+          "ngứa nhiều",
+          "có khí hư bất thường",
+          "có mùi hôi"
+        ],
+        "severe": [
+          "ngứa dữ dội",
+          "sưng đau nhiều",
+          "sốt cao",
+          "đau bụng dưới"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Sưng đau tại vị trí tổn thương"],
+      "departments": ["Chỉnh hình"],
+      "follow_up_questions": [
+        "Sưng đau sau chấn thương hay tự nhiên?",
+        "Có thể cử động được không?",
+        "Có bầm tím không?",
+        "Có nghe tiếng kêu lúc bị chấn thương không?",
+        "Đã sơ cứu bằng cách nào chưa?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "sưng nhẹ",
+          "vẫn cử động được",
+          "không bầm tím"
+        ],
+        "moderate": [
+          "sưng vừa",
+          "cử động hạn chế",
+          "có bầm tím"
+        ],
+        "severe": [
+          "sưng nhiều",
+          "không thể cử động",
+          "biến dạng",
+          "đau dữ dội"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Ho ra máu"],
+      "departments": ["Ung thư"],
+      "follow_up_questions": [
+        "Lượng máu nhiều không?",
+        "Máu màu gì (đỏ tươi hay đỏ sẫm)?",
+        "Ho ra máu bao lâu rồi?",
+        "Có sốt không?",
+        "Có đau ngực không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "vết máu nhỏ",
+          "thỉnh thoảng",
+          "không đau ngực"
+        ],
+        "moderate": [
+          "ho ra máu nhiều lần",
+          "có đau ngực nhẹ",
+          "có khó thở nhẹ"
+        ],
+        "severe": [
+          "ho ra máu nhiều",
+          "khó thở nặng",
+          "đau ngực dữ dội",
+          "mạch nhanh"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Loét miệng"],
+      "departments": ["Bệnh truyền nhiễm"],
+      "follow_up_questions": [
+        "Loét xuất hiện bao lâu rồi?",
+        "Có sốt không?",
+        "Có đau không?",
+        "Ăn uống có khó khăn không?",
+        "Đã từng bị trước đây chưa?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "vết loét nhỏ",
+          "không sốt",
+          "ăn uống bình thường"
+        ],
+        "moderate": [
+          "nhiều vết loét",
+          "đau khi ăn",
+          "sốt nhẹ"
+        ],
+        "severe": [
+          "loét lan rộng",
+          "sốt cao",
+          "không thể ăn uống",
+          "có dấu hiệu nhiễm trùng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Đau tinh hoàn"],
+      "departments": ["Tiết niệu"],
+      "follow_up_questions": [
+        "Đau đột ngột hay từ từ?",
+        "Có sưng không?",
+        "Có thay đổi màu da không?",
+        "Có tiền sử chấn thương không?",
+        "Có sốt không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đau nhẹ",
+          "không sưng",
+          "không sốt"
+        ],
+        "moderate": [
+          "đau vừa phải",
+          "có sưng nhẹ",
+          "không sốt"
+        ],
+        "severe": [
+          "đau dữ dội đột ngột",
+          "sưng to",
+          "thay đổi màu da",
+          "sốt cao"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Mắt đỏ", "Đỏ mắt"],
+      "departments": ["Nhãn khoa"],
+      "follow_up_questions": [
+        "Mắt đỏ bao lâu rồi?",
+        "Có cảm giác cộm không?",
+        "Có chảy nước mắt không?",
+        "Có tiếp xúc với bụi hoặc hóa chất không?",
+        "Có nhìn mờ không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "đỏ nhẹ",
+          "không đau",
+          "không chảy nước mắt"
+        ],
+        "moderate": [
+          "đỏ nhiều",
+          "có cộm rát",
+          "chảy nước mắt"
+        ],
+        "severe": [
+          "đỏ dữ dội",
+          "đau nhiều",
+          "nhìn mờ",
+          "tiếp xúc hóa chất"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Mắt sưng", "Sưng mắt"],
+      "departments": ["Nhãn khoa"],
+      "follow_up_questions": [
+        "Sưng một bên hay hai bên?",
+        "Sưng từ khi nào?",
+        "Có đau không?",
+        "Có ngứa không?",
+        "Có tiền sử dị ứng không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "sưng nhẹ một bên",
+          "không đau",
+          "không ảnh hưởng thị lực"
+        ],
+        "moderate": [
+          "sưng cả hai bên",
+          "có đau nhẹ",
+          "có ngứa"
+        ],
+        "severe": [
+          "sưng nặng",
+          "đau nhiều",
+          "ảnh hưởng thị lực",
+          "có dấu hiệu nhiễm trùng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Giảm thị lực"],
+      "departments": ["Nhãn khoa"],
+      "follow_up_questions": [
+        "Giảm thị lực đột ngột hay từ từ?",
+        "Một mắt hay hai mắt?",
+        "Có nhìn thấy đốm đen không?",
+        "Có đau mắt kèm theo không?",
+        "Có chấn thương gần đây không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "giảm từ từ",
+          "không đau",
+          "không có triệu chứng khác"
+        ],
+        "moderate": [
+          "giảm nhanh trong vài ngày",
+          "có đau nhẹ",
+          "một mắt"
+        ],
+        "severe": [
+          "giảm đột ngột",
+          "đau nhiều",
+          "sau chấn thương",
+          "có dấu hiệu bong võng mạc"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Nhịp tim không đều","nhịp tim bất thường"],
+      "departments": ["Tâm lý"],
+      "follow_up_questions": [
+        "Triệu chứng xuất hiện khi nào?",
+        "Có đau ngực kèm theo không?",
+        "Có khó thở không?",
+        "Có chóng mặt không?",
+        "Có tiền sử bệnh tim không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "thỉnh thoảng",
+          "không triệu chứng khác",
+          "không ảnh hưởng sinh hoạt"
+        ],
+        "moderate": [
+          "thường xuyên",
+          "có hồi hộp",
+          "có chóng mặt nhẹ"
+        ],
+        "severe": [
+          "liên tục",
+          "đau ngực",
+          "khó thở",
+          "chóng mặt nặng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Sợ hãi", "ám ảnh","Sợ hãi và ám ảnh"],
+      "departments": ["Tâm lý"],
+      "follow_up_questions": [
+        "Triệu chứng kéo dài bao lâu?",
+        "Có ảnh hưởng đến sinh hoạt không?",
+        "Có rối loạn giấc ngủ không?",
+        "Có ý tưởng tiêu cực không?",
+        "Đã từng điều trị không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "lo lắng nhẹ",
+          "vẫn sinh hoạt bình thường",
+          "không ảnh hưởng giấc ngủ"
+        ],
+        "moderate": [
+          "ảnh hưởng sinh hoạt",
+          "khó ngủ",
+          "có ý tưởng tiêu cực"
+        ],
+        "severe": [
+          "không thể sinh hoạt",
+          "có ý tưởng tự hại",
+          "hoảng loạn severe",
+          "mất ngủ kéo dài"
+        ]
+      }
+    }
+  ,
+    {
+      "symptoms": ["Chảy máu trực tràng"],
+      "departments": ["Tiêu hoá"],
+      "follow_up_questions": [
+        "Máu đỏ tươi hay đỏ sẫm?",
+        "Lượng máu nhiều không?",
+        "Có đau bụng kèm theo không?",
+        "Có thay đổi thói quen đại tiện không?",
+        "Có sốt không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "ít máu",
+          "không đau",
+          "không sốt"
+        ],
+        "moderate": [
+          "máu vừa phải",
+          "đau nhẹ",
+          "thay đổi thói quen đại tiện"
+        ],
+        "severe": [
+          "chảy máu nhiều",
+          "đau bụng dữ dội",
+          "sốt cao",
+          "chóng mặt"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Có máu trong phân"],
+      "departments": ["Tiêu hoá"],
+      "follow_up_questions": [
+        "Máu màu gì?",
+        "Phân màu gì?",
+        "Có đau bụng không?",
+        "Có sụt cân không?",
+        "Có mệt mỏi không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "ít máu",
+          "không đau bụng",
+          "không mệt mỏi"
+        ],
+        "moderate": [
+          "máu thường xuyên",
+          "đau bụng nhẹ",
+          "hơi mệt mỏi"
+        ],
+        "severe": [
+          "máu nhiều",
+          "phân đen",
+          "đau bụng dữ dội",
+          "chóng mặt"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Lo lắng và căng thẳng", "Lo lắng", "Căng thẳng"],
+      "departments": ["Tâm lý"],
+      "follow_up_questions": [
+        "Triệu chứng kéo dài bao lâu?",
+        "Có ảnh hưởng đến giấc ngủ không?",
+        "Có ảnh hưởng đến công việc không?",
+        "Có triệu chứng cơ thể kèm theo không?",
+        "Đã từng điều trị chưa?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "lo lắng nhẹ",
+          "vẫn sinh hoạt bình thường",
+          "ngủ được"
+        ],
+        "moderate": [
+          "ảnh hưởng công việc",
+          "khó ngủ",
+          "có triệu chứng cơ thể"
+        ],
+        "severe": [
+          "không thể làm việc",
+          "hoảng loạn",
+          "mất ngủ kéo dài",
+          "có ý tưởng tiêu cực"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Các cử động không tự chủ bất thường"],
+      "departments": ["Tâm lý"],
+      "follow_up_questions": [
+        "Cử động xuất hiện khi nào?",
+        "Có kiểm soát được không?",
+        "Có ảnh hưởng đến sinh hoạt không?",
+        "Có yếu tố khởi phát không?",
+        "Có triệu chứng khác kèm theo không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "cử động nhẹ",
+          "kiểm soát được",
+          "không ảnh hưởng sinh hoạt"
+        ],
+        "moderate": [
+          "cử động thường xuyên",
+          "khó kiểm soát",
+          "ảnh hưởng sinh hoạt"
+        ],
+        "severe": [
+          "không kiểm soát được",
+          "ảnh hưởng nghiêm trọng",
+          "có triệu chứng thần kinh kèm theo"
+        ]
+      }
+    }
+  ,
+    {
+      "symptoms": ["Vết sưng đỏ trông giống như mụn nhọt trên da"],
+      "departments": ["Da liễu"],
+      "follow_up_questions": [
+        "Vết sưng xuất hiện bao lâu rồi?",
+        "Có đau không?",
+        "Có nóng không?",
+        "Có lan rộng không?",
+        "Có sốt không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "sưng nhẹ",
+          "không đau",
+          "không lan rộng"
+        ],
+        "moderate": [
+          "sưng và đau",
+          "hơi nóng",
+          "lan rộng nhẹ"
+        ],
+        "severe": [
+          "sưng đỏ nhiều",
+          "đau dữ dội",
+          "lan rộng nhanh",
+          "sốt cao"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Mụn nhọt"],
+      "departments": ["Da liễu"],
+      "follow_up_questions": [
+        "Mụn xuất hiện ở đâu?",
+        "Có đau không?",
+        "Có mủ không?",
+        "Có sốt không?",
+        "Đã điều trị gì chưa?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "mụn nhỏ",
+          "không đau",
+          "không mủ"
+        ],
+        "moderate": [
+          "mụn có mủ",
+          "đau nhẹ",
+          "sưng nhẹ"
+        ],
+        "severe": [
+          "mụn lớn nhiều mủ",
+          "đau nhiều",
+          "sốt cao",
+          "lan rộng"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Cổ ngắn"],
+      "departments": ["Di truyền"],
+      "follow_up_questions": [
+        "Đã có từ khi nào?",
+        "Có khó vận động cổ không?",
+        "Có triệu chứng khác không?",
+        "Có người trong gia đình cũng bị không?",
+        "Có ảnh hưởng đến hô hấp không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "không đau",
+          "vận động bình thường",
+          "không ảnh hưởng hô hấp"
+        ],
+        "moderate": [
+          "hơi khó vận động",
+          "có triệu chứng khác",
+          "ảnh hưởng nhẹ đến hô hấp"
+        ],
+        "severe": [
+          "không thể vận động",
+          "khó thở",
+          "đau nhiều",
+          "có dấu hiệu chèn ép"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Sưng môi"],
+      "departments": ["Bệnh truyền nhiễm"],
+      "follow_up_questions": [
+        "Sưng từ khi nào?",
+        "Có ngứa không?",
+        "Có khó thở không?",
+        "Có tiền sử dị ứng không?",
+        "Có ăn gì lạ không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "sưng nhẹ",
+          "không ngứa",
+          "không khó thở"
+        ],
+        "moderate": [
+          "sưng nhiều",
+          "ngứa",
+          "hơi khó thở"
+        ],
+        "severe": [
+          "sưng nhanh",
+          "khó thở",
+          "phản ứng dị ứng",
+          "tím tái"
+        ]
+      }
+    },
+    {
+      "symptoms": ["Tổn thương da môi"],
+      "departments": ["Bệnh truyền nhiễm"],
+      "follow_up_questions": [
+        "Tổn thương như thế nào?",
+        "Có đau không?",
+        "Có sốt không?",
+        "Có bị ở vị trí khác không?",
+        "Có tiền sử bệnh da không?"
+      ],
+      "severity_indicators": {
+        "mild": [
+          "tổn thương nhỏ",
+          "không đau",
+          "không sốt"
+        ],
+        "moderate": [
+          "tổn thương nhiều",
+          "đau nhẹ",
+          "hơi sốt"
+        ],
+        "severe": [
+          "tổn thương lan rộng",
+          "đau nhiều",
+          "sốt cao",
+          "có dấu hiệu nhiễm trùng"
+        ]
+      }
+    }
+  ]
+}

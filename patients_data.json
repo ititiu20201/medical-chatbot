@@ -1,0 +1,4052 @@
+{
+  "patients": [
+    {
+      "patient_id": "P001",
+      "basic_info": {
+        "name": "Đỗ Thị Bình",
+        "date_of_birth": "2008-07-03",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0979335776",
+          "address": "Số 682, đường Hoàng Văn Thụ, Quận 7, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Văn Linh",
+          "relationship": "Chị",
+          "phone": "0983879326"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2017-06-15"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P002",
+      "basic_info": {
+        "name": "Bùi Phúc Cường",
+        "date_of_birth": "1966-05-17",
+        "gender": "Nam",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0968267834",
+          "address": "Số 291, đường Nguyễn Huệ, Quận Tân Bình, Huế"
+        },
+        "emergency_contact": {
+          "name": "Lê Minh Hà",
+          "relationship": "Con",
+          "phone": "0974772307"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2016-09-28"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P003",
+      "basic_info": {
+        "name": "Đỗ Phúc Nam",
+        "date_of_birth": "1943-06-01",
+        "gender": "Nam",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0914877646",
+          "address": "Số 721, đường Lý Tự Trọng, Quận Tân Bình, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Vũ Anh Nam",
+          "relationship": "Cha",
+          "phone": "0983788002"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2016-03-13"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P004",
+      "basic_info": {
+        "name": "Hoàng Văn Tú",
+        "date_of_birth": "1994-08-15",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0992453735",
+          "address": "Số 592, đường Bạch Đằng, Quận 4, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Trần Văn Bình",
+          "relationship": "Con",
+          "phone": "0921722789"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1500mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P005",
+      "basic_info": {
+        "name": "Hoàng Thị Tú",
+        "date_of_birth": "1984-02-12",
+        "gender": "Nam",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0907265638",
+          "address": "Số 996, đường Hoàng Diệu, Quận 1, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Trần Xuân Tú",
+          "relationship": "Em",
+          "phone": "0928301799"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "không"
+        ],
+        "allergies": [
+          "Sữa",
+          "không",
+          "Lông động vật"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2017-10-04"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P006",
+      "basic_info": {
+        "name": "Vũ Xuân Phong",
+        "date_of_birth": "1995-12-04",
+        "gender": "Nam",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0975363234",
+          "address": "Số 853, đường Lý Thường Kiệt, Quận 3, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Văn Hùng",
+          "relationship": "Em",
+          "phone": "0964122896"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2022-04-26"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P007",
+      "basic_info": {
+        "name": "Hoàng Xuân Cường",
+        "date_of_birth": "1988-05-05",
+        "gender": "Nam",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0921372536",
+          "address": "Số 621, đường Trần Phú, Quận 10, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Bùi Thị Linh",
+          "relationship": "Con",
+          "phone": "0914321507"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2022-01-26"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P008",
+      "basic_info": {
+        "name": "Trần Thị Bình",
+        "date_of_birth": "2011-11-23",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0961944817",
+          "address": "Số 364, đường Nguyễn Trãi, Quận Phú Nhuận, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Bùi Hữu Hùng",
+          "relationship": "Chị",
+          "phone": "0908960685"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Penicillin",
+          "không"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1000mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P009",
+      "basic_info": {
+        "name": "Nguyễn Xuân Bình",
+        "date_of_birth": "1972-01-18",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0996314787",
+          "address": "Số 50, đường Hoàng Diệu, Quận Bình Thạnh, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Minh Hùng",
+          "relationship": "Anh",
+          "phone": "0977832814"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Sữa",
+          "không"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "1000mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P010",
+      "basic_info": {
+        "name": "Vũ Thị Nam",
+        "date_of_birth": "2019-10-04",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0971053554",
+          "address": "Số 260, đường Phan Văn Trị, Quận 10, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Đặng Công Nam",
+          "relationship": "Anh",
+          "phone": "0903478667"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Hải sản",
+          "không",
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2021-01-22"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P011",
+      "basic_info": {
+        "name": "Nguyễn Văn Hà",
+        "date_of_birth": "1985-11-18",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0975494420",
+          "address": "Số 240, đường Nguyễn Trãi, Quận Thủ Đức, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Bùi Phúc Phong",
+          "relationship": "Vợ",
+          "phone": "0945209124"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P012",
+      "basic_info": {
+        "name": "Trần Công Cường",
+        "date_of_birth": "1965-12-08",
+        "gender": "Nam",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0916444661",
+          "address": "Số 912, đường Hùng Vương, Quận 7, Hồ Chí Minh"
+        },
+        "emergency_contact": {
+          "name": "Vũ Phúc Cường",
+          "relationship": "Anh",
+          "phone": "0992558989"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2021-02-27"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P013",
+      "basic_info": {
+        "name": "Nguyễn Minh An",
+        "date_of_birth": "1991-07-14",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0919320379",
+          "address": "Số 908, đường Phạm Ngũ Lão, Quận 3, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Thị An",
+          "relationship": "Chị",
+          "phone": "0914915147"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "không",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P014",
+      "basic_info": {
+        "name": "Trần Công Bình",
+        "date_of_birth": "1966-08-25",
+        "gender": "Nữ",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0959636946",
+          "address": "Số 278, đường Lý Thường Kiệt, Quận 3, Huế"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Minh Dương",
+          "relationship": "Chị",
+          "phone": "0919508834"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Tiểu đường type 1",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2024-05-25"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P015",
+      "basic_info": {
+        "name": "Vũ Xuân Cường",
+        "date_of_birth": "1970-11-29",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0936541295",
+          "address": "Số 975, đường Lê Lợi, Quận 3, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Trần Quang Cường",
+          "relationship": "Chồng",
+          "phone": "0918889066"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P016",
+      "basic_info": {
+        "name": "Võ Quang Phong",
+        "date_of_birth": "1966-10-02",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0972952990",
+          "address": "Số 556, đường Hoàng Diệu, Huyện Bình Chánh, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Quang Hùng",
+          "relationship": "Chị",
+          "phone": "0903549825"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Cao huyết áp",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Penicillin",
+          "Phấn hoa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P017",
+      "basic_info": {
+        "name": "Trần Xuân Tú",
+        "date_of_birth": "2021-02-08",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0967808837",
+          "address": "Số 974, đường Nguyễn Văn Cừ, Quận Bình Thạnh, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Hữu Hà",
+          "relationship": "Cha",
+          "phone": "0906821005"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Loãng xương",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Hải sản",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2020-10-21"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P018",
+      "basic_info": {
+        "name": "Nguyễn Phúc Hùng",
+        "date_of_birth": "1941-02-12",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0907579033",
+          "address": "Số 631, đường Lý Thường Kiệt, Quận Gò Vấp, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Hữu Bình",
+          "relationship": "Cha",
+          "phone": "0962558201"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P019",
+      "basic_info": {
+        "name": "Hoàng Văn Linh",
+        "date_of_birth": "1975-11-01",
+        "gender": "Nữ",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0925013358",
+          "address": "Số 285, đường Trần Hưng Đạo, Quận Phú Nhuận, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Phạm Ngọc Linh",
+          "relationship": "Cha",
+          "phone": "0956033904"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Loãng xương",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2015-06-09"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P020",
+      "basic_info": {
+        "name": "Phạm Công An",
+        "date_of_birth": "1979-06-24",
+        "gender": "Nam",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0929129851",
+          "address": "Số 613, đường Nguyễn Trãi, Huyện Cần Giờ, Hồ Chí Minh"
+        },
+        "emergency_contact": {
+          "name": "Lê Ngọc Hà",
+          "relationship": "Mẹ",
+          "phone": "0951281528"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "không",
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "Không tập",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P021",
+      "basic_info": {
+        "name": "Vũ Thị Bình",
+        "date_of_birth": "2013-10-28",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0925789218",
+          "address": "Số 616, đường Ngô Quyền, Quận 2, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Phạm Ngọc Phong",
+          "relationship": "Con",
+          "phone": "0925209644"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Hen suyễn",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Đậu phộng",
+          "Penicillin",
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2022-09-10"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P022",
+      "basic_info": {
+        "name": "Vũ Anh Phong",
+        "date_of_birth": "2021-05-20",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0988235571",
+          "address": "Số 565, đường Lê Lợi, Quận 1, Huế"
+        },
+        "emergency_contact": {
+          "name": "Trần Công Hùng",
+          "relationship": "Con",
+          "phone": "0947967331"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "không",
+          "Đậu phộng"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P023",
+      "basic_info": {
+        "name": "Nguyễn Hữu Hà",
+        "date_of_birth": "1981-02-10",
+        "gender": "Nữ",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0952562686",
+          "address": "Số 272, đường Trường Chinh, Quận Tân Bình, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Bùi Công Phong",
+          "relationship": "Vợ",
+          "phone": "0998188142"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "không",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "không"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P024",
+      "basic_info": {
+        "name": "Lê Xuân Hùng",
+        "date_of_birth": "1962-10-12",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0903495692",
+          "address": "Số 425, đường Phan Văn Trị, Quận 7, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Võ Công Hùng",
+          "relationship": "Cha",
+          "phone": "0909984926"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Loãng xương",
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P025",
+      "basic_info": {
+        "name": "Võ Hữu An",
+        "date_of_birth": "1959-06-06",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0906980661",
+          "address": "Số 653, đường Hai Bà Trưng, Quận Phú Nhuận, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Võ Quang Hà",
+          "relationship": "Cha",
+          "phone": "0909351631"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Lông động vật"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2019-06-30"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P026",
+      "basic_info": {
+        "name": "Đỗ Văn Phong",
+        "date_of_birth": "1964-08-09",
+        "gender": "Nam",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0956613440",
+          "address": "Số 803, đường Phan Văn Trị, Quận 10, Hồ Chí Minh"
+        },
+        "emergency_contact": {
+          "name": "Trần Hữu Dương",
+          "relationship": "Anh",
+          "phone": "0906848014"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P027",
+      "basic_info": {
+        "name": "Nguyễn Thị Cường",
+        "date_of_birth": "2002-10-05",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0971523542",
+          "address": "Số 307, đường Hai Bà Trưng, Huyện Cần Giờ, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Lê Văn Hà",
+          "relationship": "Chị",
+          "phone": "0996853657"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Đậu phộng",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2021-07-11"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P028",
+      "basic_info": {
+        "name": "Bùi Xuân Bình",
+        "date_of_birth": "1985-05-26",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0993219573",
+          "address": "Số 117, đường Phan Văn Trị, Quận Phú Nhuận, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Quang Cường",
+          "relationship": "Chồng",
+          "phone": "0989310595"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Cao huyết áp",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Sữa",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P029",
+      "basic_info": {
+        "name": "Đặng Phúc Phong",
+        "date_of_birth": "2003-03-11",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0914604157",
+          "address": "Số 963, đường Tôn Đức Thắng, Huyện Hóc Môn, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Minh An",
+          "relationship": "Vợ",
+          "phone": "0965894956"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Đậu phộng",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2015-12-24"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P030",
+      "basic_info": {
+        "name": "Đỗ Anh Linh",
+        "date_of_birth": "1962-02-04",
+        "gender": "Nữ",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0998457598",
+          "address": "Số 316, đường Trần Hưng Đạo, Huyện Hóc Môn, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Vũ Minh An",
+          "relationship": "Em",
+          "phone": "0916099542"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "không"
+        ],
+        "allergies": [
+          "Sữa",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P031",
+      "basic_info": {
+        "name": "Đặng Văn Nam",
+        "date_of_birth": "2003-05-06",
+        "gender": "Nữ",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0902107510",
+          "address": "Số 790, đường Phạm Ngũ Lão, Quận Gò Vấp, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Đặng Thị Cường",
+          "relationship": "Anh",
+          "phone": "0951165100"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Loãng xương",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "không",
+          "Hải sản",
+          "Đậu phộng"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P032",
+      "basic_info": {
+        "name": "Đặng Ngọc Hùng",
+        "date_of_birth": "1964-03-02",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0993199803",
+          "address": "Số 357, đường Nguyễn Trãi, Quận Bình Thạnh, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Đặng Hữu Bình",
+          "relationship": "Anh",
+          "phone": "0962542753"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Đậu phộng",
+          "Penicillin",
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P033",
+      "basic_info": {
+        "name": "Đặng Xuân Linh",
+        "date_of_birth": "2008-06-21",
+        "gender": "Nữ",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0956261170",
+          "address": "Số 474, đường Điện Biên Phủ, Quận Gò Vấp, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Đặng Quang Bình",
+          "relationship": "Vợ",
+          "phone": "0915632725"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "không"
+        ],
+        "allergies": [
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2023-06-07"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P034",
+      "basic_info": {
+        "name": "Đỗ Anh Hà",
+        "date_of_birth": "1940-05-13",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0951194497",
+          "address": "Số 747, đường Hùng Vương, Quận 2, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Phạm Xuân Tú",
+          "relationship": "Em",
+          "phone": "0945919539"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Phấn hoa",
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2020-06-25"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P035",
+      "basic_info": {
+        "name": "Trần Minh An",
+        "date_of_birth": "1962-05-27",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0939496761",
+          "address": "Số 459, đường Lý Thường Kiệt, Quận 2, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Trần Phúc Bình",
+          "relationship": "Chồng",
+          "phone": "0944218355"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Suy thận mạn",
+          "không"
+        ],
+        "allergies": [
+          "Hải sản",
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2022-07-20"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P036",
+      "basic_info": {
+        "name": "Lê Quang Hà",
+        "date_of_birth": "1969-08-01",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0965993108",
+          "address": "Số 828, đường Tôn Đức Thắng, Quận 5, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Công Linh",
+          "relationship": "Anh",
+          "phone": "0996271712"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Loãng xương",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2023-02-27"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P037",
+      "basic_info": {
+        "name": "Lê Minh Tú",
+        "date_of_birth": "1984-11-24",
+        "gender": "Nam",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0982127976",
+          "address": "Số 506, đường Tôn Đức Thắng, Huyện Hóc Môn, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Võ Ngọc Nam",
+          "relationship": "Con",
+          "phone": "0901821512"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Cao huyết áp",
+          "không"
+        ],
+        "allergies": [
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2015-08-12"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "500mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P038",
+      "basic_info": {
+        "name": "Hoàng Quang Phong",
+        "date_of_birth": "1957-03-24",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0973707391",
+          "address": "Số 131, đường Nguyễn Văn Cừ, Huyện Bình Chánh, Huế"
+        },
+        "emergency_contact": {
+          "name": "Bùi Anh Cường",
+          "relationship": "Chị",
+          "phone": "0924362174"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Hải sản",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1500mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P039",
+      "basic_info": {
+        "name": "Võ Xuân Dương",
+        "date_of_birth": "1962-07-05",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0997978446",
+          "address": "Số 127, đường Lý Tự Trọng, Quận Gò Vấp, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Phạm Minh Tú",
+          "relationship": "Cha",
+          "phone": "0919451123"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Tiểu đường type 1",
+          "không"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2019-05-09"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P040",
+      "basic_info": {
+        "name": "Trần Anh An",
+        "date_of_birth": "1948-08-31",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0928867318",
+          "address": "Số 778, đường Tôn Đức Thắng, Quận Gò Vấp, Huế"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Quang Nam",
+          "relationship": "Chị",
+          "phone": "0902174246"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Hải sản",
+          "Đậu phộng",
+          "không"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P041",
+      "basic_info": {
+        "name": "Vũ Ngọc Hà",
+        "date_of_birth": "2023-05-12",
+        "gender": "Nam",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0954597149",
+          "address": "Số 366, đường Hùng Vương, Huyện Cần Giờ, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Lê Xuân Phong",
+          "relationship": "Em",
+          "phone": "0978397273"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P042",
+      "basic_info": {
+        "name": "Phạm Công Hùng",
+        "date_of_birth": "1954-08-05",
+        "gender": "Nam",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0917333943",
+          "address": "Số 445, đường Nguyễn Trãi, Quận 4, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Văn Phong",
+          "relationship": "Con",
+          "phone": "0915451798"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Hen suyễn",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P043",
+      "basic_info": {
+        "name": "Nguyễn Thị Nam",
+        "date_of_birth": "1943-02-02",
+        "gender": "Nam",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0984661641",
+          "address": "Số 996, đường Hoàng Văn Thụ, Quận Phú Nhuận, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Bùi Hữu Nam",
+          "relationship": "Chị",
+          "phone": "0976112999"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Lông động vật",
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P044",
+      "basic_info": {
+        "name": "Đỗ Phúc Dương",
+        "date_of_birth": "1942-05-17",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0987333014",
+          "address": "Số 178, đường Lý Tự Trọng, Quận Bình Thạnh, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Võ Ngọc Cường",
+          "relationship": "Mẹ",
+          "phone": "0929584770"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2022-06-09"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P045",
+      "basic_info": {
+        "name": "Vũ Công Cường",
+        "date_of_birth": "1950-06-03",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0969828827",
+          "address": "Số 190, đường Phạm Ngũ Lão, Quận 2, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Anh Cường",
+          "relationship": "Con",
+          "phone": "0945171995"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Suy thận mạn",
+          "không"
+        ],
+        "allergies": [
+          "không",
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2022-01-06"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P046",
+      "basic_info": {
+        "name": "Đỗ Xuân Dương",
+        "date_of_birth": "1979-11-06",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0958544848",
+          "address": "Số 168, đường Trần Phú, Quận 7, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Thị Hùng",
+          "relationship": "Cha",
+          "phone": "0915605417"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "không"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2020-06-08"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1500mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P047",
+      "basic_info": {
+        "name": "Bùi Văn Phong",
+        "date_of_birth": "1973-04-10",
+        "gender": "Nữ",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0941542984",
+          "address": "Số 599, đường Điện Biên Phủ, Huyện Cần Giờ, Huế"
+        },
+        "emergency_contact": {
+          "name": "Phạm Văn Phong",
+          "relationship": "Mẹ",
+          "phone": "0919190461"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1000mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P048",
+      "basic_info": {
+        "name": "Vũ Hữu Phong",
+        "date_of_birth": "1985-02-09",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0996690880",
+          "address": "Số 299, đường Ngô Quyền, Quận Phú Nhuận, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Hữu An",
+          "relationship": "Chị",
+          "phone": "0987859681"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "không",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2016-08-12"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P049",
+      "basic_info": {
+        "name": "Đỗ Minh An",
+        "date_of_birth": "2014-10-12",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0985175789",
+          "address": "Số 265, đường Nguyễn Văn Cừ, Quận Tân Bình, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Phạm Xuân Dương",
+          "relationship": "Anh",
+          "phone": "0967813957"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2015-02-20"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P050",
+      "basic_info": {
+        "name": "Võ Hữu Hùng",
+        "date_of_birth": "1991-02-10",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0944975231",
+          "address": "Số 897, đường Hoàng Văn Thụ, Quận Tân Bình, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Vũ Công Hùng",
+          "relationship": "Chồng",
+          "phone": "0909762202"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Sữa",
+          "Penicillin",
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2016-03-04"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P051",
+      "basic_info": {
+        "name": "Đặng Minh Hùng",
+        "date_of_birth": "1987-02-25",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0992880164",
+          "address": "Số 965, đường Bạch Đằng, Quận 5, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Lê Xuân Tú",
+          "relationship": "Con",
+          "phone": "0976474962"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2022-03-11"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P052",
+      "basic_info": {
+        "name": "Trần Phúc Tú",
+        "date_of_birth": "1988-03-22",
+        "gender": "Nam",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0953130989",
+          "address": "Số 514, đường Trường Chinh, Quận 7, Huế"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Quang Hà",
+          "relationship": "Chồng",
+          "phone": "0902845643"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P053",
+      "basic_info": {
+        "name": "Võ Văn An",
+        "date_of_birth": "2002-10-25",
+        "gender": "Nam",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0912735115",
+          "address": "Số 99, đường Cách Mạng Tháng Tám, Huyện Hóc Môn, Huế"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Ngọc Hà",
+          "relationship": "Anh",
+          "phone": "0997885428"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Hải sản",
+          "không"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2017-01-31"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P054",
+      "basic_info": {
+        "name": "Trần Minh Nam",
+        "date_of_birth": "2007-04-07",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0984690165",
+          "address": "Số 540, đường Trần Phú, Huyện Cần Giờ, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Công Linh",
+          "relationship": "Vợ",
+          "phone": "0907271065"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P055",
+      "basic_info": {
+        "name": "Hoàng Ngọc Hà",
+        "date_of_birth": "1949-04-09",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0943953213",
+          "address": "Số 38, đường Bạch Đằng, Quận 10, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Hữu Bình",
+          "relationship": "Anh",
+          "phone": "0921473614"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Cao huyết áp",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1000mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P056",
+      "basic_info": {
+        "name": "Vũ Thị Hùng",
+        "date_of_birth": "1982-05-02",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0954691551",
+          "address": "Số 705, đường Hai Bà Trưng, Quận Phú Nhuận, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Bùi Minh Phong",
+          "relationship": "Vợ",
+          "phone": "0925543843"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "không"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2020-02-19"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P057",
+      "basic_info": {
+        "name": "Đặng Ngọc Phong",
+        "date_of_birth": "2004-10-06",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0963488010",
+          "address": "Số 414, đường Hùng Vương, Quận 2, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Vũ Minh Phong",
+          "relationship": "Vợ",
+          "phone": "0954000145"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Tiểu đường type 1",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P058",
+      "basic_info": {
+        "name": "Trần Anh Dương",
+        "date_of_birth": "2021-04-12",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0912701069",
+          "address": "Số 262, đường Lý Thường Kiệt, Huyện Cần Giờ, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Vũ Ngọc Hà",
+          "relationship": "Cha",
+          "phone": "0966015141"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "không",
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2020-08-14"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P059",
+      "basic_info": {
+        "name": "Phạm Thị Hà",
+        "date_of_birth": "1943-11-12",
+        "gender": "Nam",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0943699548",
+          "address": "Số 901, đường Phan Văn Trị, Quận Bình Thạnh, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Vũ Xuân Cường",
+          "relationship": "Mẹ",
+          "phone": "0948897626"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Hải sản",
+          "Đậu phộng",
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2016-12-31"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P060",
+      "basic_info": {
+        "name": "Đặng Thị Dương",
+        "date_of_birth": "1981-11-08",
+        "gender": "Nam",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0993430853",
+          "address": "Số 847, đường Nguyễn Văn Cừ, Quận Tân Bình, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Công Phong",
+          "relationship": "Chị",
+          "phone": "0981793651"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Hải sản",
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "Không tập",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P061",
+      "basic_info": {
+        "name": "Hoàng Phúc Bình",
+        "date_of_birth": "1975-03-07",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0998717801",
+          "address": "Số 343, đường Trần Hưng Đạo, Quận 1, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Lê Minh Hùng",
+          "relationship": "Anh",
+          "phone": "0904903537"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Loãng xương",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "không",
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P062",
+      "basic_info": {
+        "name": "Lê Xuân Tú",
+        "date_of_birth": "1953-03-18",
+        "gender": "Nữ",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0996566341",
+          "address": "Số 870, đường Tôn Đức Thắng, Huyện Bình Chánh, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Hữu Tú",
+          "relationship": "Chị",
+          "phone": "0935084344"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Sữa",
+          "Đậu phộng",
+          "Phấn hoa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P063",
+      "basic_info": {
+        "name": "Bùi Xuân Hùng",
+        "date_of_birth": "1997-06-07",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0937904723",
+          "address": "Số 707, đường Tôn Đức Thắng, Quận 10, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Đặng Văn Cường",
+          "relationship": "Em",
+          "phone": "0973215496"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Penicillin",
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2015-09-25"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P064",
+      "basic_info": {
+        "name": "Bùi Xuân Linh",
+        "date_of_birth": "1944-03-30",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0953848583",
+          "address": "Số 198, đường Hùng Vương, Huyện Hóc Môn, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Anh Cường",
+          "relationship": "Cha",
+          "phone": "0927235234"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Tiểu đường type 1",
+          "không"
+        ],
+        "allergies": [
+          "Lông động vật"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2017-03-31"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P065",
+      "basic_info": {
+        "name": "Hoàng Minh Hà",
+        "date_of_birth": "1982-04-04",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0991087882",
+          "address": "Số 10, đường Điện Biên Phủ, Huyện Bình Chánh, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Võ Ngọc Linh",
+          "relationship": "Con",
+          "phone": "0979133161"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P066",
+      "basic_info": {
+        "name": "Đỗ Minh Hà",
+        "date_of_birth": "1999-12-07",
+        "gender": "Nam",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0937878054",
+          "address": "Số 643, đường Hai Bà Trưng, Quận Phú Nhuận, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Vũ Quang Phong",
+          "relationship": "Em",
+          "phone": "0966459596"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2015-02-04"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P067",
+      "basic_info": {
+        "name": "Đặng Anh Dương",
+        "date_of_birth": "1944-06-13",
+        "gender": "Nữ",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0944747800",
+          "address": "Số 624, đường Phan Văn Trị, Quận Bình Thạnh, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Đặng Công Cường",
+          "relationship": "Cha",
+          "phone": "0988811828"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Tiểu đường type 1",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Sữa",
+          "Đậu phộng",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P068",
+      "basic_info": {
+        "name": "Võ Hữu Hùng",
+        "date_of_birth": "2010-11-19",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0963876833",
+          "address": "Số 668, đường Hùng Vương, Quận Thủ Đức, Huế"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Quang Bình",
+          "relationship": "Chồng",
+          "phone": "0947245267"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương"
+        ],
+        "allergies": [
+          "không"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1000mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P069",
+      "basic_info": {
+        "name": "Hoàng Quang An",
+        "date_of_birth": "1957-06-08",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0918082617",
+          "address": "Số 101, đường Trường Chinh, Quận 3, Hồ Chí Minh"
+        },
+        "emergency_contact": {
+          "name": "Đặng Quang Hùng",
+          "relationship": "Con",
+          "phone": "0901136493"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Đậu phộng"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P070",
+      "basic_info": {
+        "name": "Nguyễn Văn Nam",
+        "date_of_birth": "2018-11-20",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0957006333",
+          "address": "Số 837, đường Lý Thường Kiệt, Quận Gò Vấp, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Phạm Văn Linh",
+          "relationship": "Mẹ",
+          "phone": "0945784778"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "không"
+        ],
+        "allergies": [
+          "Đậu phộng",
+          "Phấn hoa",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2017-10-19"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "1500mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P071",
+      "basic_info": {
+        "name": "Lê Văn Dương",
+        "date_of_birth": "1942-08-29",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0925000291",
+          "address": "Số 225, đường Bạch Đằng, Quận Gò Vấp, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Quang Linh",
+          "relationship": "Con",
+          "phone": "0955913969"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Phấn hoa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P072",
+      "basic_info": {
+        "name": "Nguyễn Ngọc Linh",
+        "date_of_birth": "1972-11-18",
+        "gender": "Nữ",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0927378241",
+          "address": "Số 275, đường Nguyễn Văn Cừ, Quận 3, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Trần Văn Dương",
+          "relationship": "Anh",
+          "phone": "0937571304"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Lông động vật"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2017-01-24"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P073",
+      "basic_info": {
+        "name": "Phạm Thị Hà",
+        "date_of_birth": "1997-07-16",
+        "gender": "Nam",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0915503922",
+          "address": "Số 283, đường Phan Văn Trị, Huyện Hóc Môn, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Anh Dương",
+          "relationship": "Em",
+          "phone": "0952332896"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không"
+        ],
+        "allergies": [
+          "không"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P074",
+      "basic_info": {
+        "name": "Nguyễn Văn Tú",
+        "date_of_birth": "1952-01-13",
+        "gender": "Nam",
+        "blood_type": "B-",
+        "contact": {
+          "phone": "0941579739",
+          "address": "Số 517, đường Tôn Đức Thắng, Quận 7, Đà Nẵng"
+        },
+        "emergency_contact": {
+          "name": "Trần Thị Bình",
+          "relationship": "Chị",
+          "phone": "0989382683"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P075",
+      "basic_info": {
+        "name": "Võ Xuân Phong",
+        "date_of_birth": "1960-07-09",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0917773744",
+          "address": "Số 146, đường Nguyễn Huệ, Quận 4, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Vũ Xuân Nam",
+          "relationship": "Em",
+          "phone": "0948885808"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Cao huyết áp",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2021-02-11"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P076",
+      "basic_info": {
+        "name": "Đặng Văn Phong",
+        "date_of_birth": "1990-11-10",
+        "gender": "Nữ",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0949260263",
+          "address": "Số 63, đường Hai Bà Trưng, Huyện Bình Chánh, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Hữu Linh",
+          "relationship": "Chị",
+          "phone": "0959843187"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không"
+        ],
+        "allergies": [
+          "Hải sản"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2018-08-08"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "1000mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P077",
+      "basic_info": {
+        "name": "Đỗ Thị Phong",
+        "date_of_birth": "1946-12-11",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0947182685",
+          "address": "Số 462, đường Lý Tự Trọng, Quận 7, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Trần Công Linh",
+          "relationship": "Chị",
+          "phone": "0934669340"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Hải sản",
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2019-07-04"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P078",
+      "basic_info": {
+        "name": "Võ Thị Hùng",
+        "date_of_birth": "1982-11-04",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0925202542",
+          "address": "Số 22, đường Bạch Đằng, Quận 3, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Công Nam",
+          "relationship": "Cha",
+          "phone": "0986214400"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "không",
+          "Phấn hoa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P079",
+      "basic_info": {
+        "name": "Vũ Anh An",
+        "date_of_birth": "1999-09-20",
+        "gender": "Nam",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0957589328",
+          "address": "Số 535, đường Ngô Quyền, Quận 10, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Vũ Thị An",
+          "relationship": "Con",
+          "phone": "0923573780"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Loãng xương",
+          "không"
+        ],
+        "allergies": [
+          "không",
+          "Đậu phộng",
+          "Penicillin"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P080",
+      "basic_info": {
+        "name": "Đỗ Minh Hùng",
+        "date_of_birth": "1975-02-16",
+        "gender": "Nam",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0966072522",
+          "address": "Số 141, đường Cách Mạng Tháng Tám, Quận 5, Hải Phòng"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Hữu Hà",
+          "relationship": "Chồng",
+          "phone": "0938073977"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2019-01-23"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P081",
+      "basic_info": {
+        "name": "Nguyễn Xuân Linh",
+        "date_of_birth": "1942-06-01",
+        "gender": "Nữ",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0945227372",
+          "address": "Số 326, đường Nguyễn Huệ, Huyện Hóc Môn, Huế"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Xuân Dương",
+          "relationship": "Cha",
+          "phone": "0943836946"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Đậu phộng",
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P082",
+      "basic_info": {
+        "name": "Vũ Anh Hùng",
+        "date_of_birth": "1944-03-26",
+        "gender": "Nam",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0925048039",
+          "address": "Số 952, đường Hoàng Văn Thụ, Quận 3, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Vũ Anh Nam",
+          "relationship": "Anh",
+          "phone": "0907466126"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2015-09-28"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "500mg",
+            "frequency": "3 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P083",
+      "basic_info": {
+        "name": "Phạm Ngọc Cường",
+        "date_of_birth": "1950-06-04",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0937108439",
+          "address": "Số 865, đường Điện Biên Phủ, Quận 7, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Vũ Thị Nam",
+          "relationship": "Cha",
+          "phone": "0985985697"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "không",
+          "Hen suyễn"
+        ],
+        "allergies": [
+          "không",
+          "Lông động vật",
+          "Sữa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2023-11-06"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P084",
+      "basic_info": {
+        "name": "Đặng Ngọc Phong",
+        "date_of_birth": "2009-02-19",
+        "gender": "Nữ",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0988189317",
+          "address": "Số 305, đường Hoàng Diệu, Quận 7, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Vũ Minh Linh",
+          "relationship": "Vợ",
+          "phone": "0997096193"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Lông động vật"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2015-11-14"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P085",
+      "basic_info": {
+        "name": "Đặng Thị An",
+        "date_of_birth": "1991-12-16",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0909012321",
+          "address": "Số 181, đường Lý Thường Kiệt, Quận 4, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Trần Quang An",
+          "relationship": "Con",
+          "phone": "0988896927"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Hen suyễn",
+          "không"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Phấn hoa"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2021-02-01"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "1 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P086",
+      "basic_info": {
+        "name": "Hoàng Ngọc Cường",
+        "date_of_birth": "2013-01-02",
+        "gender": "Nam",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0944988771",
+          "address": "Số 937, đường Phan Văn Trị, Huyện Cần Giờ, Quy Nhơn"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Thị Hùng",
+          "relationship": "Chị",
+          "phone": "0922372860"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Sữa",
+          "Phấn hoa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P087",
+      "basic_info": {
+        "name": "Đỗ Hữu Cường",
+        "date_of_birth": "1968-12-15",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0924655867",
+          "address": "Số 97, đường Hoàng Văn Thụ, Quận 5, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Quang Cường",
+          "relationship": "Chị",
+          "phone": "0999147168"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Hải sản",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2020-09-13"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P088",
+      "basic_info": {
+        "name": "Phạm Xuân Linh",
+        "date_of_birth": "1968-12-02",
+        "gender": "Nữ",
+        "blood_type": "A+",
+        "contact": {
+          "phone": "0989979448",
+          "address": "Số 864, đường Phạm Ngũ Lão, Quận 10, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Lê Minh Hà",
+          "relationship": "Chị",
+          "phone": "0957917372"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "Phấn hoa",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "không",
+            "date": "2020-09-28"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "không",
+            "dosage": "1000mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P089",
+      "basic_info": {
+        "name": "Nguyễn Công Phong",
+        "date_of_birth": "1966-09-03",
+        "gender": "Nam",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0966235878",
+          "address": "Số 684, đường Lý Tự Trọng, Quận Bình Thạnh, Vinh"
+        },
+        "emergency_contact": {
+          "name": "Võ Ngọc An",
+          "relationship": "Anh",
+          "phone": "0986776187"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Cao huyết áp",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "không",
+          "Hải sản",
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2023-07-04"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P090",
+      "basic_info": {
+        "name": "Đặng Thị Cường",
+        "date_of_birth": "1995-06-16",
+        "gender": "Nam",
+        "blood_type": "O-",
+        "contact": {
+          "phone": "0935535931",
+          "address": "Số 591, đường Trần Phú, Huyện Cần Giờ, Cần Thơ"
+        },
+        "emergency_contact": {
+          "name": "Vũ Minh An",
+          "relationship": "Con",
+          "phone": "0959517651"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Cao huyết áp",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Đậu phộng"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "1 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P091",
+      "basic_info": {
+        "name": "Nguyễn Hữu An",
+        "date_of_birth": "2003-04-08",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0968802202",
+          "address": "Số 720, đường Hoàng Diệu, Quận Phú Nhuận, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Thị Dương",
+          "relationship": "Anh",
+          "phone": "0989109153"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Loãng xương",
+          "Cao huyết áp"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Sữa",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Losartan",
+            "dosage": "1000mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Không",
+        "exercise": "1 lần/tuần",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P092",
+      "basic_info": {
+        "name": "Võ Văn Dương",
+        "date_of_birth": "1991-08-16",
+        "gender": "Nam",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0982579768",
+          "address": "Số 323, đường Trần Phú, Quận 4, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Phạm Minh Hà",
+          "relationship": "Chị",
+          "phone": "0974704029"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Tiểu đường type 1",
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật ruột thừa",
+            "date": "2020-06-19"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P093",
+      "basic_info": {
+        "name": "Võ Minh Nam",
+        "date_of_birth": "2001-03-25",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0904220269",
+          "address": "Số 440, đường Hoàng Văn Thụ, Quận Thủ Đức, Hồ Chí Minh"
+        },
+        "emergency_contact": {
+          "name": "Hoàng Quang Cường",
+          "relationship": "Cha",
+          "phone": "0985665784"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Tiểu đường type 1",
+          "không"
+        ],
+        "allergies": [
+          "Penicillin",
+          "Hải sản",
+          "Lông động vật"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "1 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P094",
+      "basic_info": {
+        "name": "Phạm Hữu Phong",
+        "date_of_birth": "2008-09-23",
+        "gender": "Nữ",
+        "blood_type": "A-",
+        "contact": {
+          "phone": "0944374324",
+          "address": "Số 705, đường Trường Chinh, Quận 3, Hồ Chí Minh"
+        },
+        "emergency_contact": {
+          "name": "Nguyễn Xuân Bình",
+          "relationship": "Chồng",
+          "phone": "0999879934"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Suy thận mạn",
+          "Loãng xương"
+        ],
+        "allergies": [
+          "không",
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    },
+    {
+      "patient_id": "P095",
+      "basic_info": {
+        "name": "Lê Thị Linh",
+        "date_of_birth": "2007-05-07",
+        "gender": "Nữ",
+        "blood_type": "B+",
+        "contact": {
+          "phone": "0964128299",
+          "address": "Số 332, đường Điện Biên Phủ, Quận Phú Nhuận, Hà Nội"
+        },
+        "emergency_contact": {
+          "name": "Phạm Phúc Phong",
+          "relationship": "Vợ",
+          "phone": "0965177669"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn",
+          "không",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Penicillin"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2024-11-19"
+          }
+        ],
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P096",
+      "basic_info": {
+        "name": "Hoàng Phúc Linh",
+        "date_of_birth": "1957-04-03",
+        "gender": "Nam",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0919893026",
+          "address": "Số 242, đường Bạch Đằng, Quận 1, Nha Trang"
+        },
+        "emergency_contact": {
+          "name": "Bùi Xuân Phong",
+          "relationship": "Con",
+          "phone": "0997447901"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "không",
+          "Loãng xương",
+          "Tiểu đường type 1"
+        ],
+        "allergies": [
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thường xuyên",
+        "exercise": "3 lần/tuần",
+        "diet": "Ăn chay"
+      }
+    },
+    {
+      "patient_id": "P097",
+      "basic_info": {
+        "name": "Đỗ Thị Nam",
+        "date_of_birth": "1959-11-10",
+        "gender": "Nam",
+        "blood_type": "AB+",
+        "contact": {
+          "phone": "0911421484",
+          "address": "Số 772, đường Lê Lợi, Quận 10, Huế"
+        },
+        "emergency_contact": {
+          "name": "Võ Thị Dương",
+          "relationship": "Chồng",
+          "phone": "0926002309"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Suy thận mạn"
+        ],
+        "allergies": [
+          "Đậu phộng",
+          "Hải sản"
+        ],
+        "past_surgeries": "không",
+        "current_medications": [
+          {
+            "name": "Paracetamol",
+            "dosage": "1500mg",
+            "frequency": "2 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Có",
+        "alcohol": "Thường xuyên",
+        "exercise": "Không tập",
+        "diet": "Bình thường"
+      }
+    },
+    {
+      "patient_id": "P098",
+      "basic_info": {
+        "name": "Bùi Phúc Dương",
+        "date_of_birth": "1958-05-14",
+        "gender": "Nam",
+        "blood_type": "O+",
+        "contact": {
+          "phone": "0954996006",
+          "address": "Số 382, đường Nguyễn Huệ, Quận 1, Huế"
+        },
+        "emergency_contact": {
+          "name": "Vũ Công An",
+          "relationship": "Vợ",
+          "phone": "0989025763"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "Suy thận mạn",
+          "không"
+        ],
+        "allergies": [
+          "Lông động vật",
+          "Sữa"
+        ],
+        "past_surgeries": "không",
+        "current_medications": "không"
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Không",
+        "exercise": "3 lần/tuần",
+        "diet": "Thấp đường"
+      }
+    },
+    {
+      "patient_id": "P099",
+      "basic_info": {
+        "name": "Đặng Ngọc Phong",
+        "date_of_birth": "1989-05-03",
+        "gender": "Nữ",
+        "blood_type": "AB-",
+        "contact": {
+          "phone": "0906000106",
+          "address": "Số 83, đường Nguyễn Văn Cừ, Quận 1, Buôn Ma Thuột"
+        },
+        "emergency_contact": {
+          "name": "Đỗ Phúc Tú",
+          "relationship": "Mẹ",
+          "phone": "0927031196"
+        }
+      },
+      "medical_history": {
+        "chronic_conditions": [
+          "Hen suyễn",
+          "không"
+        ],
+        "allergies": [
+          "Đậu phộng"
+        ],
+        "past_surgeries": [
+          {
+            "procedure": "Phẫu thuật túi mật",
+            "date": "2019-03-24"
+          }
+        ],
+        "current_medications": [
+          {
+            "name": "Metformin",
+            "dosage": "1500mg",
+            "frequency": "1 lần/ngày"
+          }
+        ]
+      },
+      "lifestyle": {
+        "smoking": "Không",
+        "alcohol": "Thỉnh thoảng",
+        "exercise": "Không tập",
+        "diet": "Thấp muối"
+      }
+    }
+  ]
+}

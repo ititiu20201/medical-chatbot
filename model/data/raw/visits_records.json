@@ -1199,10 +1199,7 @@
         "patient_id": "P045",
         "timestamp": "2024-12-08",
         "symptoms": [
-          "Sưng môi",
-          "sưng môi",
-          "sung moi",
-          "Sung moi"
+          "Sưng môi"
         ],
         "chatbot_analysis": {
           "predicted_conditions": [
@@ -1214,6 +1211,22 @@
           "recommended_department": "Bệnh truyền nhiễm",
           "priority_level": "mild",
           "queue_number": 45
+        }
+      },
+      {
+        "visit_id":"V046",
+        "patient_id":"P0046",
+        "timestamp":"2024-12-08",
+        "symptoms":[
+          "Ám ảnh",
+          "Bầm tím",
+          "Đau họng"
+        ],
+        "chatbot_analysis":{
+          "predicted_conditions": [],
+          "recommended_department": [],
+          "priority_level":"mild",
+          "queue_number": 1
         }
       }
     ]

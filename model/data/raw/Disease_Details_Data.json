@@ -211,7 +211,7 @@
         "Sưng hàm",
         "Chảy máu răng"
       ],
-      "specialty": "Nha khoa" 
+      "department_name": "Nha khoa" 
     },
     {
       "condition_id": 12,
@@ -223,7 +223,7 @@
         "Dây thanh âm đóng không kín",
         "Dây thanh âm rung không đồng đều khi phát âm"
       ],
-      "specialty": "Tai Mũi Họng" 
+      "department_name": "Tai Mũi Họng" 
     },
     {
       "condition_id": 13,
@@ -237,7 +237,7 @@
         "Thiếu phát triển",
         "Bàn chân bàn tay bị sưng ngay từ khi sinh ra"
       ],
-      "specialty": "Di truyền" 
+      "department_name": "Di truyền" 
     },
     {
       "condition_id": 14,
@@ -248,7 +248,7 @@
         "Đau tinh hoàn",
         "Đi tiểu đau"
       ],
-      "specialty": "Tiết niệu" 
+      "department_name": "Tiết niệu" 
     },
     {
       "condition_id": 15,
@@ -263,7 +263,7 @@
         "Giảm ham muốn",
         "Ra khí hư"
       ],
-      "specialty": "Phụ khoa" 
+      "department_name": "Phụ khoa" 
     },
     {
       "condition_id": 16,
@@ -274,7 +274,7 @@
         "Nóng, đỏ lan nhanh",
         "Loét miệng"
       ],
-      "specialty": "Bệnh truyền nhiễm"
+      "department_name": "Bệnh truyền nhiễm"
     }
   ]
 }

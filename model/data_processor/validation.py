@@ -3,10 +3,12 @@ from pydantic import BaseModel, Field
 from typing import List
 from datetime import datetime
 
+
+
 class PatientInfo(BaseModel):
     patient_id: str
     name: str
-    date_of_birth: str
+    date_of_birth: datetime
     gender: str
     blood_type: str
     

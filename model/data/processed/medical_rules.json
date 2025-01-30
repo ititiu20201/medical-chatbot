@@ -1,0 +1,1132 @@
+{
+  "symptoms": [
+    {
+      "symptom_id": 1,
+      "symptom_name": "đau mắt",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 2,
+      "symptom_name": "mắt đỏ",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 3,
+      "symptom_name": "mắt sưng",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 4,
+      "symptom_name": "giảm thị lực",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 5,
+      "symptom_name": "ngứa mắt",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 6,
+      "symptom_name": "nổi mụn mắt",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 7,
+      "symptom_name": "mắt yếu",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 8,
+      "symptom_name": "chảy nước mắt",
+      "priority_level": "mild",
+      "related_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "symptom_id": 9,
+      "symptom_name": "lo lắng và căng thẳng",
+      "priority_level": "mild",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 10,
+      "symptom_name": "trầm cảm",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "lo âu",
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 11,
+      "symptom_name": "đau ngực dữ dội",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "lo âu",
+        "tăng bạch cầu ái toan phổi"
+      ]
+    },
+    {
+      "symptom_id": 12,
+      "symptom_name": "nhịp tim không đều",
+      "priority_level": "severe",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 13,
+      "symptom_name": "khó thở",
+      "priority_level": "severe",
+      "related_conditions": [
+        "lo âu",
+        "tăng bạch cầu ái toan phổi",
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 14,
+      "symptom_name": "đau đầu",
+      "priority_level": "mild",
+      "related_conditions": [
+        "lo âu",
+        "ngộ độc thuốc chống trầm cảm",
+        "răng khôn mọc sai vị trí"
+      ]
+    },
+    {
+      "symptom_id": 15,
+      "symptom_name": "mất ngủ",
+      "priority_level": "mild",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 16,
+      "symptom_name": "đánh trống ngực",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 17,
+      "symptom_name": "các cử động không tự chủ bất thường",
+      "priority_level": "severe",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 18,
+      "symptom_name": "nhịp tim không đều",
+      "priority_level": "severe",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 19,
+      "symptom_name": "sợ hãi và ám ảnh",
+      "priority_level": "severe",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 20,
+      "symptom_name": "nhịp tim tăng",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "lo âu"
+      ]
+    },
+    {
+      "symptom_id": 21,
+      "symptom_name": "chảy máu trực tràng",
+      "priority_level": "severe",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 22,
+      "symptom_name": "có máu trong phân",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 23,
+      "symptom_name": "táo bón",
+      "priority_level": "mild",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 24,
+      "symptom_name": "đau bụng dữ dội",
+      "priority_level": "severe",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 25,
+      "symptom_name": "thay đổi hình dạng phân",
+      "priority_level": "severe",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 26,
+      "symptom_name": "đau phần thân dưới",
+      "priority_level": "severe",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 27,
+      "symptom_name": "chuột rút và co thắt",
+      "priority_level": "severe",
+      "related_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "symptom_id": 28,
+      "symptom_name": "rối loạn trí nhớ",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 29,
+      "symptom_name": "lạm dụng rượu",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 30,
+      "symptom_name": "phản ứng dị ứng",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 31,
+      "symptom_name": "đau đầu",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 32,
+      "symptom_name": "ngất xỉu",
+      "priority_level": "mild",
+      "related_conditions": [
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 33,
+      "symptom_name": "triệu chứng cảm xúc",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ngộ độc thuốc chống trầm cảm"
+      ]
+    },
+    {
+      "symptom_id": 34,
+      "symptom_name": "cảm giác đau nhức",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "răng khôn mọc sai vị trí"
+      ]
+    },
+    {
+      "symptom_id": 35,
+      "symptom_name": "đau hàm",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "răng khôn mọc sai vị trí"
+      ]
+    },
+    {
+      "symptom_id": 36,
+      "symptom_name": "khó chịu ở vùng răng mọc và lan ra vùng xung quanh",
+      "priority_level": "severe",
+      "related_conditions": [
+        "răng khôn mọc sai vị trí"
+      ]
+    },
+    {
+      "symptom_id": 37,
+      "symptom_name": "hôi miệng",
+      "priority_level": "mild",
+      "related_conditions": [
+        "răng khôn mọc sai vị trí"
+      ]
+    },
+    {
+      "symptom_id": 38,
+      "symptom_name": "ho",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "tăng bạch cầu ái toan phổi",
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 39,
+      "symptom_name": "đau ngực dữ dội",
+      "priority_level": "severe",
+      "related_conditions": [
+        "tăng bạch cầu ái toan phổi",
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 40,
+      "symptom_name": "đổ mồ hôi ban đêm",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "tăng bạch cầu ái toan phổi"
+      ]
+    },
+    {
+      "symptom_id": 41,
+      "symptom_name": "đau cơ",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "tăng bạch cầu ái toan phổi"
+      ]
+    },
+    {
+      "symptom_id": 42,
+      "symptom_name": "khó chịu",
+      "priority_level": "mild",
+      "related_conditions": [
+        "tăng bạch cầu ái toan phổi"
+      ]
+    },
+    {
+      "symptom_id": 43,
+      "symptom_name": "ho khan",
+      "priority_level": "mild",
+      "related_conditions": [
+        "tăng bạch cầu ái toan phổi"
+      ]
+    },
+    {
+      "symptom_id": 44,
+      "symptom_name": "suy hô hấp",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ngộ độc thuốc chống co giật"
+      ]
+    },
+    {
+      "symptom_id": 45,
+      "symptom_name": "hôn mê",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ngộ độc thuốc chống co giật"
+      ]
+    },
+    {
+      "symptom_id": 46,
+      "symptom_name": "mụn nhỏ",
+      "priority_level": "mild",
+      "related_conditions": [
+        "u nang lông"
+      ]
+    },
+    {
+      "symptom_id": 47,
+      "symptom_name": "mụn nhọt",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "u nang lông"
+      ]
+    },
+    {
+      "symptom_id": 48,
+      "symptom_name": "vết sưng đỏ trông giống như mụn nhọt trên da",
+      "priority_level": "mild",
+      "related_conditions": [
+        "u nang lông"
+      ]
+    },
+    {
+      "symptom_id": 49,
+      "symptom_name": "sưng đau tại vị trí tổn thương",
+      "priority_level": "severe",
+      "related_conditions": [
+        "gãy xương bàn tay"
+      ]
+    },
+    {
+      "symptom_id": 50,
+      "symptom_name": "bầm tím và vết thương hở",
+      "priority_level": "severe",
+      "related_conditions": [
+        "gãy xương bàn tay"
+      ]
+    },
+    {
+      "symptom_id": 51,
+      "symptom_name": "khả năng vận động bị hạn chế",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "gãy xương bàn tay"
+      ]
+    },
+    {
+      "symptom_id": 52,
+      "symptom_name": "khó khăn trong các động tác gập và duỗi",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "gãy xương bàn tay"
+      ]
+    },
+    {
+      "symptom_id": 53,
+      "symptom_name": "cơn ho kéo dài",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 54,
+      "symptom_name": "ho ra máu",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 55,
+      "symptom_name": "khàn giọng",
+      "priority_level": "mild",
+      "related_conditions": [
+        "ung thư phổi",
+        "polyp dây thanh quản"
+      ]
+    },
+    {
+      "symptom_id": 56,
+      "symptom_name": "đau ngực, tức ngực",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 57,
+      "symptom_name": "thở khò khè",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 58,
+      "symptom_name": "sụt cân",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 59,
+      "symptom_name": "đau nhức cơ, xương",
+      "priority_level": "severe",
+      "related_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 60,
+      "symptom_name": "đau răng",
+      "priority_level": "mild",
+      "related_conditions": [
+        "sâu răng",
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    },
+    {
+      "symptom_id": 61,
+      "symptom_name": "răng nhạy cảm",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "sâu răng"
+      ]
+    },
+    {
+      "symptom_id": 62,
+      "symptom_name": "đau nướu răng",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "sâu răng"
+      ]
+    },
+    {
+      "symptom_id": 63,
+      "symptom_name": "sưng hàm",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "sâu răng"
+      ]
+    },
+    {
+      "symptom_id": 64,
+      "symptom_name": "chảy máu răng",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "sâu răng"
+      ]
+    },
+    {
+      "symptom_id": 65,
+      "symptom_name": "đau họng",
+      "priority_level": "mild",
+      "related_conditions": [
+        "polyp dây thanh quản",
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    },
+    {
+      "symptom_id": 66,
+      "symptom_name": "khó nói",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "polyp dây thanh quản",
+        "ung thư phổi"
+      ]
+    },
+    {
+      "symptom_id": 67,
+      "symptom_name": "dây thanh âm đóng không kín",
+      "priority_level": "severe",
+      "related_conditions": [
+        "polyp dây thanh quản"
+      ]
+    },
+    {
+      "symptom_id": 68,
+      "symptom_name": "dây thanh âm rung không đồng đều khi phát âm",
+      "priority_level": "severe",
+      "related_conditions": [
+        "polyp dây thanh quản"
+      ]
+    },
+    {
+      "symptom_id": 69,
+      "symptom_name": "cổ ngắn",
+      "priority_level": "severe",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 70,
+      "symptom_name": "xuất hiện các nếp gấp da dọc xuống vai",
+      "priority_level": "severe",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 71,
+      "symptom_name": "tai thấp",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 72,
+      "symptom_name": "chân tóc thấp ở phía sau cổ",
+      "priority_level": "severe",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 73,
+      "symptom_name": "vóc dáng thấp",
+      "priority_level": "severe",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 74,
+      "symptom_name": "thiếu phát triển",
+      "priority_level": "severe",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 75,
+      "symptom_name": "bàn chân bàn tay bị sưng ngay từ khi sinh ra",
+      "priority_level": "mild",
+      "related_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "symptom_id": 76,
+      "symptom_name": "các triệu chứng ở bìu và tinh hoàn",
+      "priority_level": "severe",
+      "related_conditions": [
+        "tắc tinh hoàn"
+      ]
+    },
+    {
+      "symptom_id": 77,
+      "symptom_name": "sưng bìu",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "tắc tinh hoàn"
+      ]
+    },
+    {
+      "symptom_id": 78,
+      "symptom_name": "đau tinh hoàn",
+      "priority_level": "severe",
+      "related_conditions": [
+        "tắc tinh hoàn"
+      ]
+    },
+    {
+      "symptom_id": 79,
+      "symptom_name": "ngứa âm đạo",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 80,
+      "symptom_name": "khô âm đạo",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 81,
+      "symptom_name": "đi tiểu đau",
+      "priority_level": "mild",
+      "related_conditions": [
+        "viêm âm đạo",
+        "tắc tinh hoàn"
+      ]
+    },
+    {
+      "symptom_id": 82,
+      "symptom_name": "đi tiểu không tự chủ",
+      "priority_level": "severe",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 83,
+      "symptom_name": "đau khi giao hợp",
+      "priority_level": "severe",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 84,
+      "symptom_name": "tăng dịch âm đạo",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 85,
+      "symptom_name": "giảm ham muốn",
+      "priority_level": "severe",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 86,
+      "symptom_name": "ra khí hư",
+      "priority_level": "mild",
+      "related_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "symptom_id": 87,
+      "symptom_name": "sưng môi",
+      "priority_level": "mild",
+      "related_conditions": [
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    },
+    {
+      "symptom_id": 88,
+      "symptom_name": "tổn thương da môi",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    },
+    {
+      "symptom_id": 89,
+      "symptom_name": "nóng, đỏ lan nhanh",
+      "priority_level": "moderate",
+      "related_conditions": [
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    },
+    {
+      "symptom_id": 90,
+      "symptom_name": "loét miệng",
+      "priority_level": "severe",
+      "related_conditions": [
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "condition_id": 1,
+      "condition_name": "viêm nội nhãn",
+      "symptoms": [
+        "đau mắt nghiêm trọng",
+        "mắt đỏ kèm sưng tấy",
+        "sưng đau mắt",
+        "giảm hoặc mất thị lực đột ngột",
+        "ngứa mắt và cảm giác khó chịu",
+        "chảy nước mắt không kiểm soát",
+        "xuất hiện mụn hoặc vết lồi trong mắt",
+        "đau mắt",
+        "mắt đỏ",
+        "đỏ mắt",
+        "mắt sưng",
+        "sưng mắt",
+        "giảm thị lực",
+        "mắt yếu",
+        "mắt kém",
+        "ngứa mắt",
+        "nổi mụn mắt",
+        "chảy nước mắt"
+      ],
+      "department_name": "nhãn khoa"
+    },
+    {
+      "condition_id": 2,
+      "condition_name": "lo âu",
+      "symptoms": [
+        "cảm giác lo lắng kéo dài",
+        "căng thẳng và mệt mỏi",
+        "khó thở hoặc thở gấp",
+        "đau ngực không rõ nguyên nhân",
+        "đánh trống ngực thường xuyên",
+        "mất ngủ hoặc ngủ không yên giấc",
+        "suy giảm khả năng tập trung",
+        "cảm giác sợ hãi vô cớ",
+        "lo lắng và căng thẳng",
+        "trầm cảm",
+        "đau ngực dữ dội",
+        "khó thở",
+        "đau đầu",
+        "mất ngủ",
+        "đánh trống ngực",
+        "các cử động không tự chủ bất thường",
+        "nhịp tim không đều",
+        "nhịp tim bất thường",
+        "sợ hãi và ám ảnh",
+        "nhịp tim tăng"
+      ],
+      "department_name": "tâm lý"
+    },
+    {
+      "condition_id": 3,
+      "condition_name": "đau bao tử",
+      "symptoms": [
+        "đau bụng vùng thượng vị",
+        "chảy máu trực tràng",
+        "xuất hiện máu trong phân",
+        "táo bón hoặc tiêu chảy",
+        "cảm giác đầy bụng sau ăn",
+        "đau quặn thắt vùng bụng dưới",
+        "nôn hoặc buồn nôn kéo dài",
+        "chảy máu trực tràng",
+        "có máu trong phân",
+        "táo bón",
+        "đau bụng dữ dội",
+        "thay đổi hình dạng phân",
+        "đau phần thân dưới",
+        "chuột rút và co thắt"
+      ],
+      "department_name": "tiêu hóa"
+    },
+    {
+      "condition_id": 4,
+      "condition_name": "ngộ độc thuốc chống trầm cảm",
+      "symptoms": [
+        "rối loạn trí nhớ",
+        "nhịp tim bất thường",
+        "đau đầu kèm chóng mặt",
+        "ngất xỉu không rõ nguyên nhân",
+        "cảm giác yếu đuối và mất cân bằng",
+        "triệu chứng cảm xúc không ổn định",
+        "buồn nôn hoặc nôn liên tục",
+        "trầm cảm",
+        "rối loạn trí nhớ",
+        "đau đầu",
+        "lạm dụng rượu",
+        "yếu đuối",
+        "ngất xỉu",
+        "triệu chứng cảm xúc"
+      ],
+      "department_name": "độc chất học"
+    },
+    {
+      "condition_id": 5,
+      "condition_name": "răng khôn mọc sai vị trí",
+      "symptoms": [
+        "cảm giác đau nhức vùng hàm",
+        "hôi miệng kéo dài",
+        "đau hoặc sưng ở vùng răng mọc",
+        "khó nhai hoặc khó mở miệng",
+        "đau đầu kèm căng cơ hàm",
+        "xuất hiện mủ hoặc dịch xung quanh vùng răng",
+        "cảm giác đau nhức",
+        "đau hàm",
+        "khó chịu ở vùng răng mọc và lan ra vùng xung quanh",
+        "hôi miệng",
+        "nhức đầu"
+      ],
+      "department_name": "răng hàm mặt"
+    },
+    {
+      "condition_id": 6,
+      "condition_name": "tăng bạch cầu ái toan phổi",
+      "symptoms": [
+        "ho khan kéo dài",
+        "khó thở hoặc thở rít",
+        "đau ngực, đặc biệt khi hít sâu",
+        "đổ mồ hôi nhiều vào ban đêm",
+        "đau cơ và mệt mỏi toàn thân",
+        "cảm giác khó chịu ở ngực hoặc lưng",
+        "xuất hiện tình trạng sốt nhẹ",
+        "ho",
+        "đau ngực dữ dội",
+        "khó thở",
+        "đổ mồ hôi ban đêm",
+        "đau cơ",
+        "khó chịu",
+        "ho khan"
+      ],
+      "department_name": "hô hấp"
+    },
+    {
+      "condition_id": 7,
+      "condition_name": "ngộ độc thuốc chống co giật",
+      "symptoms": [
+        "suy hô hấp nghiêm trọng",
+        "hôn mê hoặc mất ý thức",
+        "buồn nôn và nôn",
+        "nhịp tim chậm hoặc bất thường",
+        "co giật không kiểm soát",
+        "suy hô hấp",
+        "hôn mê"
+      ],
+      "department_name": "độc chất học"
+    },
+    {
+      "condition_id": 8,
+      "condition_name": "u nang lông",
+      "symptoms": [
+        "xuất hiện mụn nhọt hoặc sưng đỏ trên da",
+        "cảm giác đau nhức tại vùng bị u nang",
+        "mụn có mủ hoặc chảy dịch",
+        "da bị viêm hoặc nóng khi chạm vào",
+        "vùng da xung quanh trở nên cứng hoặc sần sùi",
+        "mụn nhỏ",
+        "mụn nhọt",
+        "vết sưng đỏ trông giống như mụn nhọt trên da"
+      ],
+      "department_name": "da liễu"
+    },
+    {
+      "condition_id": 9,
+      "condition_name": "gãy xương bàn tay",
+      "symptoms": [
+        "sưng đau rõ rệt tại vị trí tổn thương",
+        "bầm tím lan rộng",
+        "khả năng cử động bàn tay bị hạn chế",
+        "đau khi gập hoặc duỗi tay",
+        "biến dạng rõ ràng ở vùng xương bị gãy",
+        "sưng đau tại vị trí tổn thương",
+        "bầm tím và vết thương hở",
+        "khả năng vận động bị hạn chế",
+        "khó khăn trong các động tác gập và duỗi"
+      ],
+      "department_name": "chỉnh hình"
+    },
+    {
+      "condition_id": 10,
+      "condition_name": "ung thư phổi",
+      "symptoms": [
+        "ho kéo dài không dứt",
+        "khó thở hoặc thở khò khè",
+        "ho ra máu",
+        "đau ngực kèm tức ngực",
+        "khàn giọng kéo dài",
+        "sụt cân không rõ nguyên nhân",
+        "đau nhức cơ và xương",
+        "cơn ho kéo dài",
+        "khó thở",
+        "ho ra máu",
+        "khàn giọng",
+        "đau ngực, tức ngực",
+        "thở khò khè",
+        "sụt cân",
+        "đau nhức cơ, xương",
+        "khó nói"
+      ],
+      "department_name": "ung thư"
+    },
+    {
+      "condition_id": 11,
+      "condition_name": "sâu răng",
+      "symptoms": [
+        "đau răng",
+        "răng nhạy cảm",
+        "đau nướu răng",
+        "sưng hàm",
+        "chảy máu răng"
+      ],
+      "department_name": "nha khoa"
+    },
+    {
+      "condition_id": 12,
+      "condition_name": "polyp dây thanh quản",
+      "symptoms": [
+        "khàn giọng",
+        "đau họng",
+        "khó nói",
+        "dây thanh âm đóng không kín",
+        "dây thanh âm rung không đồng đều khi phát âm"
+      ],
+      "department_name": "tai mũi họng"
+    },
+    {
+      "condition_id": 13,
+      "condition_name": "hội chứng turner",
+      "symptoms": [
+        "cổ ngắn",
+        "xuất hiện các nếp gấp da dọc xuống vai",
+        "tai thấp",
+        "chân tóc thấp ở phía sau cổ",
+        "vóc dáng thấp",
+        "thiếu phát triển",
+        "bàn chân bàn tay bị sưng ngay từ khi sinh ra"
+      ],
+      "department_name": "di truyền"
+    },
+    {
+      "condition_id": 14,
+      "condition_name": "tắc tinh hoàn",
+      "symptoms": [
+        "các triệu chứng ở bìu và tinh hoàn",
+        "sưng bìu",
+        "đau tinh hoàn",
+        "đi tiểu đau"
+      ],
+      "department_name": "tiết niệu"
+    },
+    {
+      "condition_id": 15,
+      "condition_name": "viêm âm đạo",
+      "symptoms": [
+        "ngứa âm đạo",
+        "khô âm đạo",
+        "đi tiểu đau",
+        "đi tiểu không tự chủ",
+        "đau khi giao hợp",
+        "tăng dịch âm đạo",
+        "giảm ham muốn",
+        "ra khí hư"
+      ],
+      "department_name": "phụ khoa"
+    },
+    {
+      "condition_id": 16,
+      "condition_name": "viêm mô tế bào hoặc áp xe miệng",
+      "symptoms": [
+        "sưng môi",
+        "tổn thương da môi",
+        "nóng, đỏ lan nhanh",
+        "loét miệng"
+      ],
+      "department_name": "bệnh truyền nhiễm"
+    }
+  ],
+  "departments": [
+    {
+      "department_id": 1,
+      "department_name": "nhãn khoa",
+      "common_conditions": [
+        "viêm nội nhãn"
+      ]
+    },
+    {
+      "department_id": 2,
+      "department_name": "tâm lý",
+      "common_conditions": [
+        "lo âu",
+        "rối loạn hoảng sợ"
+      ]
+    },
+    {
+      "department_id": 3,
+      "department_name": "tiêu hóa",
+      "common_conditions": [
+        "đau bao tử"
+      ]
+    },
+    {
+      "department_id": 4,
+      "department_name": "độc chất học",
+      "common_conditions": [
+        "ngộ độc thuốc chống trầm cảm",
+        "ngộ độc do ethylene glycol"
+      ]
+    },
+    {
+      "department_id": 5,
+      "department_name": "răng hàm mặt",
+      "common_conditions": [
+        "răng khôn mọc sai vị trí"
+      ]
+    },
+    {
+      "department_id": 6,
+      "department_name": "hô hấp",
+      "common_conditions": [
+        "tăng bạch cầu ái toan phổi"
+      ]
+    },
+    {
+      "department_id": 7,
+      "department_name": "thần kinh học",
+      "common_conditions": [
+        "ngộ độc thuốc chống co giật"
+      ]
+    },
+    {
+      "department_id": 8,
+      "department_name": "da liễu",
+      "common_conditions": [
+        "u nang lông"
+      ]
+    },
+    {
+      "department_id": 9,
+      "department_name": "chỉnh hình",
+      "common_conditions": [
+        "trật khớp háng",
+        "gãy xương bàn tay"
+      ]
+    },
+    {
+      "department_id": 10,
+      "department_name": "ung thư học",
+      "common_conditions": [
+        "ung thư phổi"
+      ]
+    },
+    {
+      "department_id": 11,
+      "department_name": "nha khoa",
+      "common_conditions": [
+        "sâu răng"
+      ]
+    },
+    {
+      "department_id": 12,
+      "department_name": "tai mũi họng",
+      "common_conditions": [
+        "polyp dây thanh quản"
+      ]
+    },
+    {
+      "department_id": 13,
+      "department_name": "di truyền",
+      "common_conditions": [
+        "hội chứng turner"
+      ]
+    },
+    {
+      "department_id": 14,
+      "department_name": "tiết niệu",
+      "common_conditions": [
+        "tắc tinh hoàn"
+      ]
+    },
+    {
+      "department_id": 15,
+      "department_name": "phụ khoa",
+      "common_conditions": [
+        "viêm âm đạo"
+      ]
+    },
+    {
+      "department_id": 16,
+      "department_name": "bệnh truyền nhiễm",
+      "common_conditions": [
+        "viêm mô tế bào hoặc áp xe miệng"
+      ]
+    }
+  ]
+}

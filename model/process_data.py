@@ -125,27 +125,58 @@ class DataProcessor:
 
     def save_processed_data(self, processed_data: Dict[str, Any]) -> bool:
         """Save processed data to files and database"""
+        class DateTimeEncoder(json.JSONEncoder):
+            def default(self, obj):
+                if isinstance(obj, datetime):
+                    return obj.isoformat()
+                return super().default(obj)
+
+        def convert_to_dict(item):
+            """Recursively convert Pydantic models and datetime objects in nested structures"""
+            if hasattr(item, 'dict'):  # Check if it's a Pydantic model
+                return convert_to_dict(item.dict())
+            elif isinstance(item, dict):
+                return {key: convert_to_dict(value) for key, value in item.items()}
+            elif isinstance(item, list):
+                return [convert_to_dict(element) for element in item]
+            elif isinstance(item, datetime):
+                return item.isoformat()
+            return item
+
         try:
-            # Save to files
+        # Convert all data to JSON-serializable format
+            logger.info("Converting data to JSON-serializable format...")
+            processed_data_json = convert_to_dict(processed_data)
+            
+        # Save to files
             processed_data_path = Path(DATA_CONFIG['processed_data_path'])
             processed_data_path.mkdir(parents=True, exist_ok=True)
-            
+        
             logger.info("\nSaving processed data to files...")
-            for data_type, data_content in processed_data.items():
+            for data_type, data_content in processed_data_json.items():
                 output_file = processed_data_path / f"{data_type}.json"
                 logger.info(f"Saving {data_type} to {output_file}")
-                with open(output_file, 'w', encoding='utf-8') as f:
-                    json.dump(data_content, f, ensure_ascii=False, indent=2)
-            
-            # Save to database
+                try:
+                    with open(output_file, 'w', encoding='utf-8') as f:
+                        json.dump(data_content, f, 
+                                ensure_ascii=False, 
+                                indent=2, 
+                                cls=DateTimeEncoder)
+                    logger.info(f"Successfully saved {data_type}")
+                except Exception as e:
+                    logger.error(f"Error saving {data_type}: {str(e)}")
+                    raise
+        
+        # Save to database
             logger.info("\nSaving processed data to database...")
-            self.db_utils.save_processed_data(processed_data)
-            
+            self.db_utils.save_processed_data(processed_data_json)
+        
             logger.info("All data saved successfully")
             return True
         except Exception as e:
             logger.error(f"Error saving processed data: {str(e)}")
             return False
+    
 
     def create_backup(self, data: Dict[str, Any]) -> None:
         """Create a backup of the processed data"""

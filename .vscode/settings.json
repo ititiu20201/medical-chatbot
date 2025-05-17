@@ -1,7 +1,0 @@
-{
-    "python.defaultInterpreterPath": "/path/to/your/conda/envs/torch-env/bin/python",
-    "python.formatting.provider": "black",
-    "editor.formatOnSave": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
-}
